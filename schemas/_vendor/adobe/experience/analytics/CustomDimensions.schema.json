@@ -1,0 +1,2062 @@
+{
+    "id": "CustomDimensions.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Analytics Cloud Custom Dimensions",
+    "type": "object",
+    "description": "Adobe Analytics Cloud custom dimensions.",
+    "properties": {
+        "eVars": {
+            "title": "Custom Conversion",
+            "type": "object",
+            "description": "Custom conversion variables.",
+            "properties": {
+                "eVar1": {
+                    "title": "eVar1",
+                    "type": "string",
+                    "description": "Custom conversion variable 1."
+                },
+                "eVar2": {
+                    "title": "eVar2",
+                    "type": "string",
+                    "description": "Custom conversion variable 2."
+                },
+                "eVar3": {
+                    "title": "eVar3",
+                    "type": "string",
+                    "description": "Custom conversion variable 3."
+                },
+                "eVar4": {
+                    "title": "eVar4",
+                    "type": "string",
+                    "description": "Custom conversion variable 4."
+                },
+                "eVar5": {
+                    "title": "eVar5",
+                    "type": "string",
+                    "description": "Custom conversion variable 5."
+                },
+                "eVar6": {
+                    "title": "eVar6",
+                    "type": "string",
+                    "description": "Custom conversion variable 6."
+                },
+                "eVar7": {
+                    "title": "eVar7",
+                    "type": "string",
+                    "description": "Custom conversion variable 7."
+                },
+                "eVar8": {
+                    "title": "eVar8",
+                    "type": "string",
+                    "description": "Custom conversion variable 8."
+                },
+                "eVar9": {
+                    "title": "eVar9",
+                    "type": "string",
+                    "description": "Custom conversion variable 9."
+                },
+                "eVar10": {
+                    "title": "eVar10",
+                    "type": "string",
+                    "description": "Custom conversion variable 10."
+                },
+                "eVar11": {
+                    "title": "eVar11",
+                    "type": "string",
+                    "description": "Custom conversion variable 11."
+                },
+                "eVar12": {
+                    "title": "eVar12",
+                    "type": "string",
+                    "description": "Custom conversion variable 12."
+                },
+                "eVar13": {
+                    "title": "eVar13",
+                    "type": "string",
+                    "description": "Custom conversion variable 13."
+                },
+                "eVar14": {
+                    "title": "eVar14",
+                    "type": "string",
+                    "description": "Custom conversion variable 14."
+                },
+                "eVar15": {
+                    "title": "eVar15",
+                    "type": "string",
+                    "description": "Custom conversion variable 15."
+                },
+                "eVar16": {
+                    "title": "eVar16",
+                    "type": "string",
+                    "description": "Custom conversion variable 16."
+                },
+                "eVar17": {
+                    "title": "eVar17",
+                    "type": "string",
+                    "description": "Custom conversion variable 17."
+                },
+                "eVar18": {
+                    "title": "eVar18",
+                    "type": "string",
+                    "description": "Custom conversion variable 18."
+                },
+                "eVar19": {
+                    "title": "eVar19",
+                    "type": "string",
+                    "description": "Custom conversion variable 19."
+                },
+                "eVar20": {
+                    "title": "eVar20",
+                    "type": "string",
+                    "description": "Custom conversion variable 20."
+                },
+                "eVar21": {
+                    "title": "eVar21",
+                    "type": "string",
+                    "description": "Custom conversion variable 21."
+                },
+                "eVar22": {
+                    "title": "eVar22",
+                    "type": "string",
+                    "description": "Custom conversion variable 22."
+                },
+                "eVar23": {
+                    "title": "eVar23",
+                    "type": "string",
+                    "description": "Custom conversion variable 23."
+                },
+                "eVar24": {
+                    "title": "eVar24",
+                    "type": "string",
+                    "description": "Custom conversion variable 24."
+                },
+                "eVar25": {
+                    "title": "eVar25",
+                    "type": "string",
+                    "description": "Custom conversion variable 25."
+                },
+                "eVar26": {
+                    "title": "eVar26",
+                    "type": "string",
+                    "description": "Custom conversion variable 26."
+                },
+                "eVar27": {
+                    "title": "eVar27",
+                    "type": "string",
+                    "description": "Custom conversion variable 27."
+                },
+                "eVar28": {
+                    "title": "eVar28",
+                    "type": "string",
+                    "description": "Custom conversion variable 28."
+                },
+                "eVar29": {
+                    "title": "eVar29",
+                    "type": "string",
+                    "description": "Custom conversion variable 29."
+                },
+                "eVar30": {
+                    "title": "eVar30",
+                    "type": "string",
+                    "description": "Custom conversion variable 30."
+                },
+                "eVar31": {
+                    "title": "eVar31",
+                    "type": "string",
+                    "description": "Custom conversion variable 31."
+                },
+                "eVar32": {
+                    "title": "eVar32",
+                    "type": "string",
+                    "description": "Custom conversion variable 32."
+                },
+                "eVar33": {
+                    "title": "eVar33",
+                    "type": "string",
+                    "description": "Custom conversion variable 33."
+                },
+                "eVar34": {
+                    "title": "eVar34",
+                    "type": "string",
+                    "description": "Custom conversion variable 34."
+                },
+                "eVar35": {
+                    "title": "eVar35",
+                    "type": "string",
+                    "description": "Custom conversion variable 35."
+                },
+                "eVar36": {
+                    "title": "eVar36",
+                    "type": "string",
+                    "description": "Custom conversion variable 36."
+                },
+                "eVar37": {
+                    "title": "eVar37",
+                    "type": "string",
+                    "description": "Custom conversion variable 37."
+                },
+                "eVar38": {
+                    "title": "eVar38",
+                    "type": "string",
+                    "description": "Custom conversion variable 38."
+                },
+                "eVar39": {
+                    "title": "eVar39",
+                    "type": "string",
+                    "description": "Custom conversion variable 39."
+                },
+                "eVar40": {
+                    "title": "eVar40",
+                    "type": "string",
+                    "description": "Custom conversion variable 40."
+                },
+                "eVar41": {
+                    "title": "eVar41",
+                    "type": "string",
+                    "description": "Custom conversion variable 41."
+                },
+                "eVar42": {
+                    "title": "eVar42",
+                    "type": "string",
+                    "description": "Custom conversion variable 42."
+                },
+                "eVar43": {
+                    "title": "eVar43",
+                    "type": "string",
+                    "description": "Custom conversion variable 43."
+                },
+                "eVar44": {
+                    "title": "eVar44",
+                    "type": "string",
+                    "description": "Custom conversion variable 44."
+                },
+                "eVar45": {
+                    "title": "eVar45",
+                    "type": "string",
+                    "description": "Custom conversion variable 45."
+                },
+                "eVar46": {
+                    "title": "eVar46",
+                    "type": "string",
+                    "description": "Custom conversion variable 46."
+                },
+                "eVar47": {
+                    "title": "eVar47",
+                    "type": "string",
+                    "description": "Custom conversion variable 47."
+                },
+                "eVar48": {
+                    "title": "eVar48",
+                    "type": "string",
+                    "description": "Custom conversion variable 48."
+                },
+                "eVar49": {
+                    "title": "eVar49",
+                    "type": "string",
+                    "description": "Custom conversion variable 49."
+                },
+                "eVar50": {
+                    "title": "eVar50",
+                    "type": "string",
+                    "description": "Custom conversion variable 50."
+                },
+                "eVar51": {
+                    "title": "eVar51",
+                    "type": "string",
+                    "description": "Custom conversion variable 51."
+                },
+                "eVar52": {
+                    "title": "eVar52",
+                    "type": "string",
+                    "description": "Custom conversion variable 52."
+                },
+                "eVar53": {
+                    "title": "eVar53",
+                    "type": "string",
+                    "description": "Custom conversion variable 53."
+                },
+                "eVar54": {
+                    "title": "eVar54",
+                    "type": "string",
+                    "description": "Custom conversion variable 54."
+                },
+                "eVar55": {
+                    "title": "eVar55",
+                    "type": "string",
+                    "description": "Custom conversion variable 55."
+                },
+                "eVar56": {
+                    "title": "eVar56",
+                    "type": "string",
+                    "description": "Custom conversion variable 56."
+                },
+                "eVar57": {
+                    "title": "eVar57",
+                    "type": "string",
+                    "description": "Custom conversion variable 57."
+                },
+                "eVar58": {
+                    "title": "eVar58",
+                    "type": "string",
+                    "description": "Custom conversion variable 58."
+                },
+                "eVar59": {
+                    "title": "eVar59",
+                    "type": "string",
+                    "description": "Custom conversion variable 59."
+                },
+                "eVar60": {
+                    "title": "eVar60",
+                    "type": "string",
+                    "description": "Custom conversion variable 60."
+                },
+                "eVar61": {
+                    "title": "eVar61",
+                    "type": "string",
+                    "description": "Custom conversion variable 61."
+                },
+                "eVar62": {
+                    "title": "eVar62",
+                    "type": "string",
+                    "description": "Custom conversion variable 62."
+                },
+                "eVar63": {
+                    "title": "eVar63",
+                    "type": "string",
+                    "description": "Custom conversion variable 63."
+                },
+                "eVar64": {
+                    "title": "eVar64",
+                    "type": "string",
+                    "description": "Custom conversion variable 64."
+                },
+                "eVar65": {
+                    "title": "eVar65",
+                    "type": "string",
+                    "description": "Custom conversion variable 65."
+                },
+                "eVar66": {
+                    "title": "eVar66",
+                    "type": "string",
+                    "description": "Custom conversion variable 66."
+                },
+                "eVar67": {
+                    "title": "eVar67",
+                    "type": "string",
+                    "description": "Custom conversion variable 67."
+                },
+                "eVar68": {
+                    "title": "eVar68",
+                    "type": "string",
+                    "description": "Custom conversion variable 68."
+                },
+                "eVar69": {
+                    "title": "eVar69",
+                    "type": "string",
+                    "description": "Custom conversion variable 69."
+                },
+                "eVar70": {
+                    "title": "eVar70",
+                    "type": "string",
+                    "description": "Custom conversion variable 70."
+                },
+                "eVar71": {
+                    "title": "eVar71",
+                    "type": "string",
+                    "description": "Custom conversion variable 71."
+                },
+                "eVar72": {
+                    "title": "eVar72",
+                    "type": "string",
+                    "description": "Custom conversion variable 72."
+                },
+                "eVar73": {
+                    "title": "eVar73",
+                    "type": "string",
+                    "description": "Custom conversion variable 73."
+                },
+                "eVar74": {
+                    "title": "eVar74",
+                    "type": "string",
+                    "description": "Custom conversion variable 74."
+                },
+                "eVar75": {
+                    "title": "eVar75",
+                    "type": "string",
+                    "description": "Custom conversion variable 75."
+                },
+                "eVar76": {
+                    "title": "eVar76",
+                    "type": "string",
+                    "description": "Custom conversion variable 76."
+                },
+                "eVar77": {
+                    "title": "eVar77",
+                    "type": "string",
+                    "description": "Custom conversion variable 77."
+                },
+                "eVar78": {
+                    "title": "eVar78",
+                    "type": "string",
+                    "description": "Custom conversion variable 78."
+                },
+                "eVar79": {
+                    "title": "eVar79",
+                    "type": "string",
+                    "description": "Custom conversion variable 79."
+                },
+                "eVar80": {
+                    "title": "eVar80",
+                    "type": "string",
+                    "description": "Custom conversion variable 80."
+                },
+                "eVar81": {
+                    "title": "eVar81",
+                    "type": "string",
+                    "description": "Custom conversion variable 81."
+                },
+                "eVar82": {
+                    "title": "eVar82",
+                    "type": "string",
+                    "description": "Custom conversion variable 82."
+                },
+                "eVar83": {
+                    "title": "eVar83",
+                    "type": "string",
+                    "description": "Custom conversion variable 83."
+                },
+                "eVar84": {
+                    "title": "eVar84",
+                    "type": "string",
+                    "description": "Custom conversion variable 84."
+                },
+                "eVar85": {
+                    "title": "eVar85",
+                    "type": "string",
+                    "description": "Custom conversion variable 85."
+                },
+                "eVar86": {
+                    "title": "eVar86",
+                    "type": "string",
+                    "description": "Custom conversion variable 86."
+                },
+                "eVar87": {
+                    "title": "eVar87",
+                    "type": "string",
+                    "description": "Custom conversion variable 87."
+                },
+                "eVar88": {
+                    "title": "eVar88",
+                    "type": "string",
+                    "description": "Custom conversion variable 88."
+                },
+                "eVar89": {
+                    "title": "eVar89",
+                    "type": "string",
+                    "description": "Custom conversion variable 89."
+                },
+                "eVar90": {
+                    "title": "eVar90",
+                    "type": "string",
+                    "description": "Custom conversion variable 90."
+                },
+                "eVar91": {
+                    "title": "eVar91",
+                    "type": "string",
+                    "description": "Custom conversion variable 91."
+                },
+                "eVar92": {
+                    "title": "eVar92",
+                    "type": "string",
+                    "description": "Custom conversion variable 92."
+                },
+                "eVar93": {
+                    "title": "eVar93",
+                    "type": "string",
+                    "description": "Custom conversion variable 93."
+                },
+                "eVar94": {
+                    "title": "eVar94",
+                    "type": "string",
+                    "description": "Custom conversion variable 94."
+                },
+                "eVar95": {
+                    "title": "eVar95",
+                    "type": "string",
+                    "description": "Custom conversion variable 95."
+                },
+                "eVar96": {
+                    "title": "eVar96",
+                    "type": "string",
+                    "description": "Custom conversion variable 96."
+                },
+                "eVar97": {
+                    "title": "eVar97",
+                    "type": "string",
+                    "description": "Custom conversion variable 97."
+                },
+                "eVar98": {
+                    "title": "eVar98",
+                    "type": "string",
+                    "description": "Custom conversion variable 98."
+                },
+                "eVar99": {
+                    "title": "eVar99",
+                    "type": "string",
+                    "description": "Custom conversion variable 99."
+                },
+                "eVar100": {
+                    "title": "eVar100",
+                    "type": "string",
+                    "description": "Custom conversion variable 100."
+                },
+                "eVar101": {
+                    "title": "eVar101",
+                    "type": "string",
+                    "description": "Custom conversion variable 101."
+                },
+                "eVar102": {
+                    "title": "eVar102",
+                    "type": "string",
+                    "description": "Custom conversion variable 102."
+                },
+                "eVar103": {
+                    "title": "eVar103",
+                    "type": "string",
+                    "description": "Custom conversion variable 103."
+                },
+                "eVar104": {
+                    "title": "eVar104",
+                    "type": "string",
+                    "description": "Custom conversion variable 104."
+                },
+                "eVar105": {
+                    "title": "eVar105",
+                    "type": "string",
+                    "description": "Custom conversion variable 105."
+                },
+                "eVar106": {
+                    "title": "eVar106",
+                    "type": "string",
+                    "description": "Custom conversion variable 106."
+                },
+                "eVar107": {
+                    "title": "eVar107",
+                    "type": "string",
+                    "description": "Custom conversion variable 107."
+                },
+                "eVar108": {
+                    "title": "eVar108",
+                    "type": "string",
+                    "description": "Custom conversion variable 108."
+                },
+                "eVar109": {
+                    "title": "eVar109",
+                    "type": "string",
+                    "description": "Custom conversion variable 109."
+                },
+                "eVar110": {
+                    "title": "eVar110",
+                    "type": "string",
+                    "description": "Custom conversion variable 110."
+                },
+                "eVar111": {
+                    "title": "eVar111",
+                    "type": "string",
+                    "description": "Custom conversion variable 111."
+                },
+                "eVar112": {
+                    "title": "eVar112",
+                    "type": "string",
+                    "description": "Custom conversion variable 112."
+                },
+                "eVar113": {
+                    "title": "eVar113",
+                    "type": "string",
+                    "description": "Custom conversion variable 113."
+                },
+                "eVar114": {
+                    "title": "eVar114",
+                    "type": "string",
+                    "description": "Custom conversion variable 114."
+                },
+                "eVar115": {
+                    "title": "eVar115",
+                    "type": "string",
+                    "description": "Custom conversion variable 115."
+                },
+                "eVar116": {
+                    "title": "eVar116",
+                    "type": "string",
+                    "description": "Custom conversion variable 116."
+                },
+                "eVar117": {
+                    "title": "eVar117",
+                    "type": "string",
+                    "description": "Custom conversion variable 117."
+                },
+                "eVar118": {
+                    "title": "eVar118",
+                    "type": "string",
+                    "description": "Custom conversion variable 118."
+                },
+                "eVar119": {
+                    "title": "eVar119",
+                    "type": "string",
+                    "description": "Custom conversion variable 119."
+                },
+                "eVar120": {
+                    "title": "eVar120",
+                    "type": "string",
+                    "description": "Custom conversion variable 120."
+                },
+                "eVar121": {
+                    "title": "eVar121",
+                    "type": "string",
+                    "description": "Custom conversion variable 121."
+                },
+                "eVar122": {
+                    "title": "eVar122",
+                    "type": "string",
+                    "description": "Custom conversion variable 122."
+                },
+                "eVar123": {
+                    "title": "eVar123",
+                    "type": "string",
+                    "description": "Custom conversion variable 123."
+                },
+                "eVar124": {
+                    "title": "eVar124",
+                    "type": "string",
+                    "description": "Custom conversion variable 124."
+                },
+                "eVar125": {
+                    "title": "eVar125",
+                    "type": "string",
+                    "description": "Custom conversion variable 125."
+                },
+                "eVar126": {
+                    "title": "eVar126",
+                    "type": "string",
+                    "description": "Custom conversion variable 126."
+                },
+                "eVar127": {
+                    "title": "eVar127",
+                    "type": "string",
+                    "description": "Custom conversion variable 127."
+                },
+                "eVar128": {
+                    "title": "eVar128",
+                    "type": "string",
+                    "description": "Custom conversion variable 128."
+                },
+                "eVar129": {
+                    "title": "eVar129",
+                    "type": "string",
+                    "description": "Custom conversion variable 129."
+                },
+                "eVar130": {
+                    "title": "eVar130",
+                    "type": "string",
+                    "description": "Custom conversion variable 130."
+                },
+                "eVar131": {
+                    "title": "eVar131",
+                    "type": "string",
+                    "description": "Custom conversion variable 131."
+                },
+                "eVar132": {
+                    "title": "eVar132",
+                    "type": "string",
+                    "description": "Custom conversion variable 132."
+                },
+                "eVar133": {
+                    "title": "eVar133",
+                    "type": "string",
+                    "description": "Custom conversion variable 133."
+                },
+                "eVar134": {
+                    "title": "eVar134",
+                    "type": "string",
+                    "description": "Custom conversion variable 134."
+                },
+                "eVar135": {
+                    "title": "eVar135",
+                    "type": "string",
+                    "description": "Custom conversion variable 135."
+                },
+                "eVar136": {
+                    "title": "eVar136",
+                    "type": "string",
+                    "description": "Custom conversion variable 136."
+                },
+                "eVar137": {
+                    "title": "eVar137",
+                    "type": "string",
+                    "description": "Custom conversion variable 137."
+                },
+                "eVar138": {
+                    "title": "eVar138",
+                    "type": "string",
+                    "description": "Custom conversion variable 138."
+                },
+                "eVar139": {
+                    "title": "eVar139",
+                    "type": "string",
+                    "description": "Custom conversion variable 139."
+                },
+                "eVar140": {
+                    "title": "eVar140",
+                    "type": "string",
+                    "description": "Custom conversion variable 140."
+                },
+                "eVar141": {
+                    "title": "eVar141",
+                    "type": "string",
+                    "description": "Custom conversion variable 141."
+                },
+                "eVar142": {
+                    "title": "eVar142",
+                    "type": "string",
+                    "description": "Custom conversion variable 142."
+                },
+                "eVar143": {
+                    "title": "eVar143",
+                    "type": "string",
+                    "description": "Custom conversion variable 143."
+                },
+                "eVar144": {
+                    "title": "eVar144",
+                    "type": "string",
+                    "description": "Custom conversion variable 144."
+                },
+                "eVar145": {
+                    "title": "eVar145",
+                    "type": "string",
+                    "description": "Custom conversion variable 145."
+                },
+                "eVar146": {
+                    "title": "eVar146",
+                    "type": "string",
+                    "description": "Custom conversion variable 146."
+                },
+                "eVar147": {
+                    "title": "eVar147",
+                    "type": "string",
+                    "description": "Custom conversion variable 147."
+                },
+                "eVar148": {
+                    "title": "eVar148",
+                    "type": "string",
+                    "description": "Custom conversion variable 148."
+                },
+                "eVar149": {
+                    "title": "eVar149",
+                    "type": "string",
+                    "description": "Custom conversion variable 149."
+                },
+                "eVar150": {
+                    "title": "eVar150",
+                    "type": "string",
+                    "description": "Custom conversion variable 150."
+                },
+                "eVar151": {
+                    "title": "eVar151",
+                    "type": "string",
+                    "description": "Custom conversion variable 151."
+                },
+                "eVar152": {
+                    "title": "eVar152",
+                    "type": "string",
+                    "description": "Custom conversion variable 152."
+                },
+                "eVar153": {
+                    "title": "eVar153",
+                    "type": "string",
+                    "description": "Custom conversion variable 153."
+                },
+                "eVar154": {
+                    "title": "eVar154",
+                    "type": "string",
+                    "description": "Custom conversion variable 154."
+                },
+                "eVar155": {
+                    "title": "eVar155",
+                    "type": "string",
+                    "description": "Custom conversion variable 155."
+                },
+                "eVar156": {
+                    "title": "eVar156",
+                    "type": "string",
+                    "description": "Custom conversion variable 156."
+                },
+                "eVar157": {
+                    "title": "eVar157",
+                    "type": "string",
+                    "description": "Custom conversion variable 157."
+                },
+                "eVar158": {
+                    "title": "eVar158",
+                    "type": "string",
+                    "description": "Custom conversion variable 158."
+                },
+                "eVar159": {
+                    "title": "eVar159",
+                    "type": "string",
+                    "description": "Custom conversion variable 159."
+                },
+                "eVar160": {
+                    "title": "eVar160",
+                    "type": "string",
+                    "description": "Custom conversion variable 160."
+                },
+                "eVar161": {
+                    "title": "eVar161",
+                    "type": "string",
+                    "description": "Custom conversion variable 161."
+                },
+                "eVar162": {
+                    "title": "eVar162",
+                    "type": "string",
+                    "description": "Custom conversion variable 162."
+                },
+                "eVar163": {
+                    "title": "eVar163",
+                    "type": "string",
+                    "description": "Custom conversion variable 163."
+                },
+                "eVar164": {
+                    "title": "eVar164",
+                    "type": "string",
+                    "description": "Custom conversion variable 164."
+                },
+                "eVar165": {
+                    "title": "eVar165",
+                    "type": "string",
+                    "description": "Custom conversion variable 165."
+                },
+                "eVar166": {
+                    "title": "eVar166",
+                    "type": "string",
+                    "description": "Custom conversion variable 166."
+                },
+                "eVar167": {
+                    "title": "eVar167",
+                    "type": "string",
+                    "description": "Custom conversion variable 167."
+                },
+                "eVar168": {
+                    "title": "eVar168",
+                    "type": "string",
+                    "description": "Custom conversion variable 168."
+                },
+                "eVar169": {
+                    "title": "eVar169",
+                    "type": "string",
+                    "description": "Custom conversion variable 169."
+                },
+                "eVar170": {
+                    "title": "eVar170",
+                    "type": "string",
+                    "description": "Custom conversion variable 170."
+                },
+                "eVar171": {
+                    "title": "eVar171",
+                    "type": "string",
+                    "description": "Custom conversion variable 171."
+                },
+                "eVar172": {
+                    "title": "eVar172",
+                    "type": "string",
+                    "description": "Custom conversion variable 172."
+                },
+                "eVar173": {
+                    "title": "eVar173",
+                    "type": "string",
+                    "description": "Custom conversion variable 173."
+                },
+                "eVar174": {
+                    "title": "eVar174",
+                    "type": "string",
+                    "description": "Custom conversion variable 174."
+                },
+                "eVar175": {
+                    "title": "eVar175",
+                    "type": "string",
+                    "description": "Custom conversion variable 175."
+                },
+                "eVar176": {
+                    "title": "eVar176",
+                    "type": "string",
+                    "description": "Custom conversion variable 176."
+                },
+                "eVar177": {
+                    "title": "eVar177",
+                    "type": "string",
+                    "description": "Custom conversion variable 177."
+                },
+                "eVar178": {
+                    "title": "eVar178",
+                    "type": "string",
+                    "description": "Custom conversion variable 178."
+                },
+                "eVar179": {
+                    "title": "eVar179",
+                    "type": "string",
+                    "description": "Custom conversion variable 179."
+                },
+                "eVar180": {
+                    "title": "eVar180",
+                    "type": "string",
+                    "description": "Custom conversion variable 180."
+                },
+                "eVar181": {
+                    "title": "eVar181",
+                    "type": "string",
+                    "description": "Custom conversion variable 181."
+                },
+                "eVar182": {
+                    "title": "eVar182",
+                    "type": "string",
+                    "description": "Custom conversion variable 182."
+                },
+                "eVar183": {
+                    "title": "eVar183",
+                    "type": "string",
+                    "description": "Custom conversion variable 183."
+                },
+                "eVar184": {
+                    "title": "eVar184",
+                    "type": "string",
+                    "description": "Custom conversion variable 184."
+                },
+                "eVar185": {
+                    "title": "eVar185",
+                    "type": "string",
+                    "description": "Custom conversion variable 185."
+                },
+                "eVar186": {
+                    "title": "eVar186",
+                    "type": "string",
+                    "description": "Custom conversion variable 186."
+                },
+                "eVar187": {
+                    "title": "eVar187",
+                    "type": "string",
+                    "description": "Custom conversion variable 187."
+                },
+                "eVar188": {
+                    "title": "eVar188",
+                    "type": "string",
+                    "description": "Custom conversion variable 188."
+                },
+                "eVar189": {
+                    "title": "eVar189",
+                    "type": "string",
+                    "description": "Custom conversion variable 189."
+                },
+                "eVar190": {
+                    "title": "eVar190",
+                    "type": "string",
+                    "description": "Custom conversion variable 190."
+                },
+                "eVar191": {
+                    "title": "eVar191",
+                    "type": "string",
+                    "description": "Custom conversion variable 191."
+                },
+                "eVar192": {
+                    "title": "eVar192",
+                    "type": "string",
+                    "description": "Custom conversion variable 192."
+                },
+                "eVar193": {
+                    "title": "eVar193",
+                    "type": "string",
+                    "description": "Custom conversion variable 193."
+                },
+                "eVar194": {
+                    "title": "eVar194",
+                    "type": "string",
+                    "description": "Custom conversion variable 194."
+                },
+                "eVar195": {
+                    "title": "eVar195",
+                    "type": "string",
+                    "description": "Custom conversion variable 195."
+                },
+                "eVar196": {
+                    "title": "eVar196",
+                    "type": "string",
+                    "description": "Custom conversion variable 196."
+                },
+                "eVar197": {
+                    "title": "eVar197",
+                    "type": "string",
+                    "description": "Custom conversion variable 197."
+                },
+                "eVar198": {
+                    "title": "eVar198",
+                    "type": "string",
+                    "description": "Custom conversion variable 198."
+                },
+                "eVar199": {
+                    "title": "eVar199",
+                    "type": "string",
+                    "description": "Custom conversion variable 199."
+                },
+                "eVar200": {
+                    "title": "eVar200",
+                    "type": "string",
+                    "description": "Custom conversion variable 200."
+                },
+                "eVar201": {
+                    "title": "eVar201",
+                    "type": "string",
+                    "description": "Custom conversion variable 201."
+                },
+                "eVar202": {
+                    "title": "eVar202",
+                    "type": "string",
+                    "description": "Custom conversion variable 202."
+                },
+                "eVar203": {
+                    "title": "eVar203",
+                    "type": "string",
+                    "description": "Custom conversion variable 203."
+                },
+                "eVar204": {
+                    "title": "eVar204",
+                    "type": "string",
+                    "description": "Custom conversion variable 204."
+                },
+                "eVar205": {
+                    "title": "eVar205",
+                    "type": "string",
+                    "description": "Custom conversion variable 205."
+                },
+                "eVar206": {
+                    "title": "eVar206",
+                    "type": "string",
+                    "description": "Custom conversion variable 206."
+                },
+                "eVar207": {
+                    "title": "eVar207",
+                    "type": "string",
+                    "description": "Custom conversion variable 207."
+                },
+                "eVar208": {
+                    "title": "eVar208",
+                    "type": "string",
+                    "description": "Custom conversion variable 208."
+                },
+                "eVar209": {
+                    "title": "eVar209",
+                    "type": "string",
+                    "description": "Custom conversion variable 209."
+                },
+                "eVar210": {
+                    "title": "eVar210",
+                    "type": "string",
+                    "description": "Custom conversion variable 210."
+                },
+                "eVar211": {
+                    "title": "eVar211",
+                    "type": "string",
+                    "description": "Custom conversion variable 211."
+                },
+                "eVar212": {
+                    "title": "eVar212",
+                    "type": "string",
+                    "description": "Custom conversion variable 212."
+                },
+                "eVar213": {
+                    "title": "eVar213",
+                    "type": "string",
+                    "description": "Custom conversion variable 213."
+                },
+                "eVar214": {
+                    "title": "eVar214",
+                    "type": "string",
+                    "description": "Custom conversion variable 214."
+                },
+                "eVar215": {
+                    "title": "eVar215",
+                    "type": "string",
+                    "description": "Custom conversion variable 215."
+                },
+                "eVar216": {
+                    "title": "eVar216",
+                    "type": "string",
+                    "description": "Custom conversion variable 216."
+                },
+                "eVar217": {
+                    "title": "eVar217",
+                    "type": "string",
+                    "description": "Custom conversion variable 217."
+                },
+                "eVar218": {
+                    "title": "eVar218",
+                    "type": "string",
+                    "description": "Custom conversion variable 218."
+                },
+                "eVar219": {
+                    "title": "eVar219",
+                    "type": "string",
+                    "description": "Custom conversion variable 219."
+                },
+                "eVar220": {
+                    "title": "eVar220",
+                    "type": "string",
+                    "description": "Custom conversion variable 220."
+                },
+                "eVar221": {
+                    "title": "eVar221",
+                    "type": "string",
+                    "description": "Custom conversion variable 221."
+                },
+                "eVar222": {
+                    "title": "eVar222",
+                    "type": "string",
+                    "description": "Custom conversion variable 222."
+                },
+                "eVar223": {
+                    "title": "eVar223",
+                    "type": "string",
+                    "description": "Custom conversion variable 223."
+                },
+                "eVar224": {
+                    "title": "eVar224",
+                    "type": "string",
+                    "description": "Custom conversion variable 224."
+                },
+                "eVar225": {
+                    "title": "eVar225",
+                    "type": "string",
+                    "description": "Custom conversion variable 225."
+                },
+                "eVar226": {
+                    "title": "eVar226",
+                    "type": "string",
+                    "description": "Custom conversion variable 226."
+                },
+                "eVar227": {
+                    "title": "eVar227",
+                    "type": "string",
+                    "description": "Custom conversion variable 227."
+                },
+                "eVar228": {
+                    "title": "eVar228",
+                    "type": "string",
+                    "description": "Custom conversion variable 228."
+                },
+                "eVar229": {
+                    "title": "eVar229",
+                    "type": "string",
+                    "description": "Custom conversion variable 229."
+                },
+                "eVar230": {
+                    "title": "eVar230",
+                    "type": "string",
+                    "description": "Custom conversion variable 230."
+                },
+                "eVar231": {
+                    "title": "eVar231",
+                    "type": "string",
+                    "description": "Custom conversion variable 231."
+                },
+                "eVar232": {
+                    "title": "eVar232",
+                    "type": "string",
+                    "description": "Custom conversion variable 232."
+                },
+                "eVar233": {
+                    "title": "eVar233",
+                    "type": "string",
+                    "description": "Custom conversion variable 233."
+                },
+                "eVar234": {
+                    "title": "eVar234",
+                    "type": "string",
+                    "description": "Custom conversion variable 234."
+                },
+                "eVar235": {
+                    "title": "eVar235",
+                    "type": "string",
+                    "description": "Custom conversion variable 235."
+                },
+                "eVar236": {
+                    "title": "eVar236",
+                    "type": "string",
+                    "description": "Custom conversion variable 236."
+                },
+                "eVar237": {
+                    "title": "eVar237",
+                    "type": "string",
+                    "description": "Custom conversion variable 237."
+                },
+                "eVar238": {
+                    "title": "eVar238",
+                    "type": "string",
+                    "description": "Custom conversion variable 238."
+                },
+                "eVar239": {
+                    "title": "eVar239",
+                    "type": "string",
+                    "description": "Custom conversion variable 239."
+                },
+                "eVar240": {
+                    "title": "eVar240",
+                    "type": "string",
+                    "description": "Custom conversion variable 240."
+                },
+                "eVar241": {
+                    "title": "eVar241",
+                    "type": "string",
+                    "description": "Custom conversion variable 241."
+                },
+                "eVar242": {
+                    "title": "eVar242",
+                    "type": "string",
+                    "description": "Custom conversion variable 242."
+                },
+                "eVar243": {
+                    "title": "eVar243",
+                    "type": "string",
+                    "description": "Custom conversion variable 243."
+                },
+                "eVar244": {
+                    "title": "eVar244",
+                    "type": "string",
+                    "description": "Custom conversion variable 244."
+                },
+                "eVar245": {
+                    "title": "eVar245",
+                    "type": "string",
+                    "description": "Custom conversion variable 245."
+                },
+                "eVar246": {
+                    "title": "eVar246",
+                    "type": "string",
+                    "description": "Custom conversion variable 246."
+                },
+                "eVar247": {
+                    "title": "eVar247",
+                    "type": "string",
+                    "description": "Custom conversion variable 247."
+                },
+                "eVar248": {
+                    "title": "eVar248",
+                    "type": "string",
+                    "description": "Custom conversion variable 248."
+                },
+                "eVar249": {
+                    "title": "eVar249",
+                    "type": "string",
+                    "description": "Custom conversion variable 249."
+                },
+                "eVar250": {
+                    "title": "eVar250",
+                    "type": "string",
+                    "description": "Custom conversion variable 250."
+                }
+            }
+        },
+        "props": {
+            "title": "Custom Properties",
+            "type": "object",
+            "description": "Custom property variables.",
+            "properties": {
+                "prop1": {
+                    "title": "prop1",
+                    "type": "string",
+                    "description": "Custom property variable 1."
+                },
+                "prop2": {
+                    "title": "prop2",
+                    "type": "string",
+                    "description": "Custom property variable 2."
+                },
+                "prop3": {
+                    "title": "prop3",
+                    "type": "string",
+                    "description": "Custom property variable 3."
+                },
+                "prop4": {
+                    "title": "prop4",
+                    "type": "string",
+                    "description": "Custom property variable 4."
+                },
+                "prop5": {
+                    "title": "prop5",
+                    "type": "string",
+                    "description": "Custom property variable 5."
+                },
+                "prop6": {
+                    "title": "prop6",
+                    "type": "string",
+                    "description": "Custom property variable 6."
+                },
+                "prop7": {
+                    "title": "prop7",
+                    "type": "string",
+                    "description": "Custom property variable 7."
+                },
+                "prop8": {
+                    "title": "prop8",
+                    "type": "string",
+                    "description": "Custom property variable 8."
+                },
+                "prop9": {
+                    "title": "prop9",
+                    "type": "string",
+                    "description": "Custom property variable 9."
+                },
+                "prop10": {
+                    "title": "prop10",
+                    "type": "string",
+                    "description": "Custom property variable 10."
+                },
+                "prop11": {
+                    "title": "prop11",
+                    "type": "string",
+                    "description": "Custom property variable 11."
+                },
+                "prop12": {
+                    "title": "prop12",
+                    "type": "string",
+                    "description": "Custom property variable 12."
+                },
+                "prop13": {
+                    "title": "prop13",
+                    "type": "string",
+                    "description": "Custom property variable 13."
+                },
+                "prop14": {
+                    "title": "prop14",
+                    "type": "string",
+                    "description": "Custom property variable 14."
+                },
+                "prop15": {
+                    "title": "prop15",
+                    "type": "string",
+                    "description": "Custom property variable 15."
+                },
+                "prop16": {
+                    "title": "prop16",
+                    "type": "string",
+                    "description": "Custom property variable 16."
+                },
+                "prop17": {
+                    "title": "prop17",
+                    "type": "string",
+                    "description": "Custom property variable 17."
+                },
+                "prop18": {
+                    "title": "prop18",
+                    "type": "string",
+                    "description": "Custom property variable 18."
+                },
+                "prop19": {
+                    "title": "prop19",
+                    "type": "string",
+                    "description": "Custom property variable 19."
+                },
+                "prop20": {
+                    "title": "prop20",
+                    "type": "string",
+                    "description": "Custom property variable 20."
+                },
+                "prop21": {
+                    "title": "prop21",
+                    "type": "string",
+                    "description": "Custom property variable 21."
+                },
+                "prop22": {
+                    "title": "prop22",
+                    "type": "string",
+                    "description": "Custom property variable 22."
+                },
+                "prop23": {
+                    "title": "prop23",
+                    "type": "string",
+                    "description": "Custom property variable 23."
+                },
+                "prop24": {
+                    "title": "prop24",
+                    "type": "string",
+                    "description": "Custom property variable 24."
+                },
+                "prop25": {
+                    "title": "prop25",
+                    "type": "string",
+                    "description": "Custom property variable 25."
+                },
+                "prop26": {
+                    "title": "prop26",
+                    "type": "string",
+                    "description": "Custom property variable 26."
+                },
+                "prop27": {
+                    "title": "prop27",
+                    "type": "string",
+                    "description": "Custom property variable 27."
+                },
+                "prop28": {
+                    "title": "prop28",
+                    "type": "string",
+                    "description": "Custom property variable 28."
+                },
+                "prop29": {
+                    "title": "prop29",
+                    "type": "string",
+                    "description": "Custom property variable 29."
+                },
+                "prop30": {
+                    "title": "prop30",
+                    "type": "string",
+                    "description": "Custom property variable 30."
+                },
+                "prop31": {
+                    "title": "prop31",
+                    "type": "string",
+                    "description": "Custom property variable 31."
+                },
+                "prop32": {
+                    "title": "prop32",
+                    "type": "string",
+                    "description": "Custom property variable 32."
+                },
+                "prop33": {
+                    "title": "prop33",
+                    "type": "string",
+                    "description": "Custom property variable 33."
+                },
+                "prop34": {
+                    "title": "prop34",
+                    "type": "string",
+                    "description": "Custom property variable 34."
+                },
+                "prop35": {
+                    "title": "prop35",
+                    "type": "string",
+                    "description": "Custom property variable 35."
+                },
+                "prop36": {
+                    "title": "prop36",
+                    "type": "string",
+                    "description": "Custom property variable 36."
+                },
+                "prop37": {
+                    "title": "prop37",
+                    "type": "string",
+                    "description": "Custom property variable 37."
+                },
+                "prop38": {
+                    "title": "prop38",
+                    "type": "string",
+                    "description": "Custom property variable 38."
+                },
+                "prop39": {
+                    "title": "prop39",
+                    "type": "string",
+                    "description": "Custom property variable 39."
+                },
+                "prop40": {
+                    "title": "prop40",
+                    "type": "string",
+                    "description": "Custom property variable 40."
+                },
+                "prop41": {
+                    "title": "prop41",
+                    "type": "string",
+                    "description": "Custom property variable 41."
+                },
+                "prop42": {
+                    "title": "prop42",
+                    "type": "string",
+                    "description": "Custom property variable 42."
+                },
+                "prop43": {
+                    "title": "prop43",
+                    "type": "string",
+                    "description": "Custom property variable 43."
+                },
+                "prop44": {
+                    "title": "prop44",
+                    "type": "string",
+                    "description": "Custom property variable 44."
+                },
+                "prop45": {
+                    "title": "prop45",
+                    "type": "string",
+                    "description": "Custom property variable 45."
+                },
+                "prop46": {
+                    "title": "prop46",
+                    "type": "string",
+                    "description": "Custom property variable 46."
+                },
+                "prop47": {
+                    "title": "prop47",
+                    "type": "string",
+                    "description": "Custom property variable 47."
+                },
+                "prop48": {
+                    "title": "prop48",
+                    "type": "string",
+                    "description": "Custom property variable 48."
+                },
+                "prop49": {
+                    "title": "prop49",
+                    "type": "string",
+                    "description": "Custom property variable 49."
+                },
+                "prop50": {
+                    "title": "prop50",
+                    "type": "string",
+                    "description": "Custom property variable 50."
+                },
+                "prop51": {
+                    "title": "prop51",
+                    "type": "string",
+                    "description": "Custom property variable 51."
+                },
+                "prop52": {
+                    "title": "prop52",
+                    "type": "string",
+                    "description": "Custom property variable 52."
+                },
+                "prop53": {
+                    "title": "prop53",
+                    "type": "string",
+                    "description": "Custom property variable 53."
+                },
+                "prop54": {
+                    "title": "prop54",
+                    "type": "string",
+                    "description": "Custom property variable 54."
+                },
+                "prop55": {
+                    "title": "prop55",
+                    "type": "string",
+                    "description": "Custom property variable 55."
+                },
+                "prop56": {
+                    "title": "prop56",
+                    "type": "string",
+                    "description": "Custom property variable 56."
+                },
+                "prop57": {
+                    "title": "prop57",
+                    "type": "string",
+                    "description": "Custom property variable 57."
+                },
+                "prop58": {
+                    "title": "prop58",
+                    "type": "string",
+                    "description": "Custom property variable 58."
+                },
+                "prop59": {
+                    "title": "prop59",
+                    "type": "string",
+                    "description": "Custom property variable 59."
+                },
+                "prop60": {
+                    "title": "prop60",
+                    "type": "string",
+                    "description": "Custom property variable 60."
+                },
+                "prop61": {
+                    "title": "prop61",
+                    "type": "string",
+                    "description": "Custom property variable 61."
+                },
+                "prop62": {
+                    "title": "prop62",
+                    "type": "string",
+                    "description": "Custom property variable 62."
+                },
+                "prop63": {
+                    "title": "prop63",
+                    "type": "string",
+                    "description": "Custom property variable 63."
+                },
+                "prop64": {
+                    "title": "prop64",
+                    "type": "string",
+                    "description": "Custom property variable 64."
+                },
+                "prop65": {
+                    "title": "prop65",
+                    "type": "string",
+                    "description": "Custom property variable 65."
+                },
+                "prop66": {
+                    "title": "prop66",
+                    "type": "string",
+                    "description": "Custom property variable 66."
+                },
+                "prop67": {
+                    "title": "prop67",
+                    "type": "string",
+                    "description": "Custom property variable 67."
+                },
+                "prop68": {
+                    "title": "prop68",
+                    "type": "string",
+                    "description": "Custom property variable 68."
+                },
+                "prop69": {
+                    "title": "prop69",
+                    "type": "string",
+                    "description": "Custom property variable 69."
+                },
+                "prop70": {
+                    "title": "prop70",
+                    "type": "string",
+                    "description": "Custom property variable 70."
+                },
+                "prop71": {
+                    "title": "prop71",
+                    "type": "string",
+                    "description": "Custom property variable 71."
+                },
+                "prop72": {
+                    "title": "prop72",
+                    "type": "string",
+                    "description": "Custom property variable 72."
+                },
+                "prop73": {
+                    "title": "prop73",
+                    "type": "string",
+                    "description": "Custom property variable 73."
+                },
+                "prop74": {
+                    "title": "prop74",
+                    "type": "string",
+                    "description": "Custom property variable 74."
+                },
+                "prop75": {
+                    "title": "prop75",
+                    "type": "string",
+                    "description": "Custom property variable 75."
+                }
+            }
+        },
+        "listProps": {
+            "title": "Custom List Properties",
+            "type": "object",
+            "description": "Custom list property variables.",
+            "properties": {
+                "prop1": {
+                    "title": "prop1",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 1."
+                },
+                "prop2": {
+                    "title": "prop2",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 2."
+                },
+                "prop3": {
+                    "title": "prop3",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 3."
+                },
+                "prop4": {
+                    "title": "prop4",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 4."
+                },
+                "prop5": {
+                    "title": "prop5",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 5."
+                },
+                "prop6": {
+                    "title": "prop6",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 6."
+                },
+                "prop7": {
+                    "title": "prop7",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 7."
+                },
+                "prop8": {
+                    "title": "prop8",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 8."
+                },
+                "prop9": {
+                    "title": "prop9",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 9."
+                },
+                "prop10": {
+                    "title": "prop10",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 10."
+                },
+                "prop11": {
+                    "title": "prop11",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 11."
+                },
+                "prop12": {
+                    "title": "prop12",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 12."
+                },
+                "prop13": {
+                    "title": "prop13",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 13."
+                },
+                "prop14": {
+                    "title": "prop14",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 14."
+                },
+                "prop15": {
+                    "title": "prop15",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 15."
+                },
+                "prop16": {
+                    "title": "prop16",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 16."
+                },
+                "prop17": {
+                    "title": "prop17",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 17."
+                },
+                "prop18": {
+                    "title": "prop18",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 18."
+                },
+                "prop19": {
+                    "title": "prop19",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 19."
+                },
+                "prop20": {
+                    "title": "prop20",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 20."
+                },
+                "prop21": {
+                    "title": "prop21",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 21."
+                },
+                "prop22": {
+                    "title": "prop22",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 22."
+                },
+                "prop23": {
+                    "title": "prop23",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 23."
+                },
+                "prop24": {
+                    "title": "prop24",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 24."
+                },
+                "prop25": {
+                    "title": "prop25",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 25."
+                },
+                "prop26": {
+                    "title": "prop26",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 26."
+                },
+                "prop27": {
+                    "title": "prop27",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 27."
+                },
+                "prop28": {
+                    "title": "prop28",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 28."
+                },
+                "prop29": {
+                    "title": "prop29",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 29."
+                },
+                "prop30": {
+                    "title": "prop30",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 30."
+                },
+                "prop31": {
+                    "title": "prop31",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 31."
+                },
+                "prop32": {
+                    "title": "prop32",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 32."
+                },
+                "prop33": {
+                    "title": "prop33",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 33."
+                },
+                "prop34": {
+                    "title": "prop34",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 34."
+                },
+                "prop35": {
+                    "title": "prop35",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 35."
+                },
+                "prop36": {
+                    "title": "prop36",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 36."
+                },
+                "prop37": {
+                    "title": "prop37",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 37."
+                },
+                "prop38": {
+                    "title": "prop38",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 38."
+                },
+                "prop39": {
+                    "title": "prop39",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 39."
+                },
+                "prop40": {
+                    "title": "prop40",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 40."
+                },
+                "prop41": {
+                    "title": "prop41",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 41."
+                },
+                "prop42": {
+                    "title": "prop42",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 42."
+                },
+                "prop43": {
+                    "title": "prop43",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 43."
+                },
+                "prop44": {
+                    "title": "prop44",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 44."
+                },
+                "prop45": {
+                    "title": "prop45",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 45."
+                },
+                "prop46": {
+                    "title": "prop46",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 46."
+                },
+                "prop47": {
+                    "title": "prop47",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 47."
+                },
+                "prop48": {
+                    "title": "prop48",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 48."
+                },
+                "prop49": {
+                    "title": "prop49",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 49."
+                },
+                "prop50": {
+                    "title": "prop50",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 50."
+                },
+                "prop51": {
+                    "title": "prop51",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 51."
+                },
+                "prop52": {
+                    "title": "prop52",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 52."
+                },
+                "prop53": {
+                    "title": "prop53",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 53."
+                },
+                "prop54": {
+                    "title": "prop54",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 54."
+                },
+                "prop55": {
+                    "title": "prop55",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 55."
+                },
+                "prop56": {
+                    "title": "prop56",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 56."
+                },
+                "prop57": {
+                    "title": "prop57",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 57."
+                },
+                "prop58": {
+                    "title": "prop58",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 58."
+                },
+                "prop59": {
+                    "title": "prop59",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 59."
+                },
+                "prop60": {
+                    "title": "prop60",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 60."
+                },
+                "prop61": {
+                    "title": "prop61",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 61."
+                },
+                "prop62": {
+                    "title": "prop62",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 62."
+                },
+                "prop63": {
+                    "title": "prop63",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 63."
+                },
+                "prop64": {
+                    "title": "prop64",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 64."
+                },
+                "prop65": {
+                    "title": "prop65",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 65."
+                },
+                "prop66": {
+                    "title": "prop66",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 66."
+                },
+                "prop67": {
+                    "title": "prop67",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 67."
+                },
+                "prop68": {
+                    "title": "prop68",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 68."
+                },
+                "prop69": {
+                    "title": "prop69",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 69."
+                },
+                "prop70": {
+                    "title": "prop70",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 70."
+                },
+                "prop71": {
+                    "title": "prop71",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 71."
+                },
+                "prop72": {
+                    "title": "prop72",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 72."
+                },
+                "prop73": {
+                    "title": "prop73",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 73."
+                },
+                "prop74": {
+                    "title": "prop74",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 74."
+                },
+                "prop75": {
+                    "title": "prop75",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom property variable 75."
+                }
+            }
+        },
+        "hierarchies": {
+            "title": "Custom Hierarchy Variables",
+            "type": "object",
+            "description": "Custom hierarchy variables.",
+            "properties": {
+                "hier1": {
+                    "title": "hier1",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom hierarchy variable 1."
+                },
+                "hier2": {
+                    "title": "hier2",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom hierarchy variable 2."
+                },
+                "hier3": {
+                    "title": "hier3",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom hierarchy variable 3."
+                },
+                "hier4": {
+                    "title": "hier4",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom hierarchy variable 4."
+                },
+                "hier5": {
+                    "title": "hier5",
+                    "$ref": "../../../../core/ListDetails.schema.json",
+                    "description": "Custom hierarchy variable 5."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "core/OpeningHours.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Opening Hours",
+    "type": "object",
+    "description": "Opening and closing times for a store or service.",
+    "properties": {
+        "sunday": {
+            "title": "Sunday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Sunday times."
+        },
+        "monday": {
+            "title": "Monday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Monday times."
+        },
+        "tuesday": {
+            "title": "Tuesday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Tuesday times."
+        },
+        "wednesday": {
+            "title": "Wednesday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Wednesday times."
+        },
+        "thursday": {
+            "title": "Thursday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Thursday times."
+        },
+        "friday": {
+            "title": "Friday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Friday times."
+        },
+        "saturday": {
+            "title": "Saturday",
+            "$ref": "../core/Times.schema.json",
+            "description": "Saturday times."
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "id": "EndUserIds.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe EndUserIds Extension",
+    "type": "object",
+    "description": "Adobe specific extensions to EndUserIds",
+    "properties": {
+        "experience": {
+            "title": "Adobe Experience Cloud EndUserIds Extension",
+            "$ref": "../../_vendor/adobe/experience/EndUserIds.schema.json",
+            "description": "Adobe Experience Cloud extensions to EndUserIds."
+        }
+    }
+}

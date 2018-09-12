@@ -1,0 +1,548 @@
+{
+    "id": "optinout.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "OptInOut",
+    "type": "object",
+    "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_channels": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "email": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/email",
+                    "tagNumber": 1,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "phone": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/phone",
+                    "tagNumber": 2,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "sms": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/sms",
+                    "tagNumber": 3,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "fax": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/fax",
+                    "tagNumber": 4,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "directMail": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/direct-mail",
+                    "tagNumber": 5,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "adm": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/adm",
+                    "tagNumber": 6,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "apns": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/apns",
+                    "tagNumber": 7,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "baidu": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/baidu",
+                    "tagNumber": 8,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "gcm": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/gcm",
+                    "tagNumber": 9,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "line": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/line",
+                    "tagNumber": 10,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "mpns": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/mpns",
+                    "tagNumber": 11,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "wechat": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/wechat",
+                    "tagNumber": 12,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                },
+                "wns": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "https://ns.adobe.com/xdm/channels/wns",
+                    "tagNumber": 13,
+                    "enumValues": [
+                        {
+                            "not_provided": {
+                                "title": "Not Provided",
+                                "tagNumber": 0
+                            }
+                        },
+                        {
+                            "pending": {
+                                "title": "Pending Verification",
+                                "tagNumber": 1
+                            }
+                        },
+                        {
+                            "in": {
+                                "title": "Opt-In: the user explicitly consents to receiving messages.",
+                                "tagNumber": 2
+                            }
+                        },
+                        {
+                            "out": {
+                                "title": "Opt-Out: the user declines to receive any messages on this channel",
+                                "tagNumber": 3
+                            }
+                        }
+                    ]
+                }
+            },
+            "tagNumber": 1
+        },
+        "globalOptout": {
+            "title": "Global Opt-out",
+            "type": "boolean",
+            "description": "Do not contact this profile on any outbound channel.",
+            "default": false,
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:globalOptout",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/optinout",
+    "meta:altId": "_xdm.context.optinout"
+}

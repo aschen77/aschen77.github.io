@@ -1,0 +1,61 @@
+{
+    "id": "implementationdetails.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Implementation Details",
+    "type": "object",
+    "description": "Details about the SDK, library or service used in an application's or web page's implementation of a service.",
+    "meta:xdmType": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "format": "uri",
+            "description": "SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, this includes extensions.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 1,
+            "enumValues": [
+                {
+                    "scode": {
+                        "title": "Adobe Analytics sCode",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "appmeasurement": {
+                        "title": "Adobe App Measurement",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "mbox": {
+                        "title": "Adobe Target mBox",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "visitorapi": {
+                        "title": "Adobe Visitor Service",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "adcloud/viewability": {
+                        "title": "Adobe AdCloud Viewability",
+                        "tagNumber": 4
+                    }
+                }
+            ]
+        },
+        "version": {
+            "title": "Version",
+            "type": "string",
+            "description": "The version identifier of the API, e.g h.18.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/implementationdetails",
+    "meta:altId": "_xdm.context.implementationdetails"
+}

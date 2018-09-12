@@ -1,0 +1,14 @@
+{
+    "id": "EndUserIds.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Generated End User Snapshot",
+    "type": "object",
+    "description": "Adobe Analytics Cloud generated end-user details at the point of this ExperienceEvent.",
+    "properties": {
+        "id": {
+            "title": "Analytics Id",
+            "$ref": "../../../../core/Identity.schema.json",
+            "description": "Adobe Analytics end user identifier."
+        }
+    }
+}

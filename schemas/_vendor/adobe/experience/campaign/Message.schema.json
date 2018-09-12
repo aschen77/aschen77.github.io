@@ -1,0 +1,150 @@
+{
+    "id": "Message.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Message",
+    "type": "object",
+    "description": "A message part of a campaign activity.\nA message is created each `Profile` targeted in a `Delivery`. If a profile\nis targeted twice within the same delivery, two messages will be created.\n",
+    "properties": {
+        "id": {
+            "title": "Message Identifier",
+            "type": "string"
+        },
+        "profile": {
+            "title": "Profile",
+            "$ref": "../../../../model/Profile.schema.json",
+            "description": "The recipient of the message.\n\nThis property is primarily used to link the message to a Profile using the EndCustomerId\nbut it can also be used to freeze some properties of the profile at the time the message\nwas sent.\n"
+        },
+        "delivery": {
+            "title": "Delivery",
+            "$ref": "../../../../_vendor/adobe/experience/campaign/Delivery.schema.json",
+            "description": "The campaign activity originating this message.\n"
+        },
+        "from": {
+            "title": "From",
+            "type": "string",
+            "description": "Address used as a from/sender/caller address.\nDepending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.\n",
+            "maxLength": 255
+        },
+        "to": {
+            "title": "To",
+            "type": "string",
+            "description": "Address used to deliver the message to the recipient.\nDepending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a phone number.\n  * `directMail`: a postal address.\n  * `pushNotification`: a push registration token.\n",
+            "maxLength": 255
+        },
+        "quarantine": {
+            "title": "Quarantine",
+            "type": "boolean",
+            "description": "Address moved to quarantine.\nThe quarantine is set to true when the message failed to deliver in a way\nthat indicates that no future messages will be deliverable either to this\naddress.\n",
+            "default": false
+        },
+        "proofMember": {
+            "title": "Proof Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of the proof group for this campaign activity.",
+            "default": false
+        },
+        "seedMember": {
+            "title": "Seed Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of a seed list for this campaign\nactivity.\n",
+            "default": false
+        },
+        "controlGroupMember": {
+            "title": "Control Group Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of a control group\nfor this campaign activity.\n\nMessages to control group members are not delivered.\n",
+            "default": false
+        },
+        "testMember": {
+            "title": "A/B Test Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of a test group for this campaign activity.",
+            "default": false
+        },
+        "size": {
+            "title": "Size (Bytes)",
+            "type": "integer",
+            "description": "Size in bytes of the message.\n\n* For email, the `size` reflects the all MIME envelop of the message, including\nthe encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.\n",
+            "minimum": 0,
+            "maximum": 2147483647
+        },
+        "scheduledAt": {
+            "title": "Scheduled At",
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time the message is expected to be delivered."
+        },
+        "variant": {
+            "title": "Variant",
+            "type": "string",
+            "description": "A campaign activity can have multiple variants (French, English) but a\nmessage delivered to a recipient always contains one of them.\n\n> IMPORTANT: Using the mirror page, the recipient can switch from one\n  variant to another (ex: switch of the language).\n"
+        },
+        "IP": {
+            "title": "IP Address",
+            "type": "string",
+            "description": "Outbound IP address used to deliver the message."
+        },
+        "reason": {
+            "title": "Reason",
+            "type": "string",
+            "enumValues": [
+                {
+                    "unknownUser": {
+                        "title": "Unknown User"
+                    }
+                },
+                {
+                    "invalidDomain": {
+                        "title": "Invalid Domain"
+                    }
+                },
+                {
+                    "disabled": {
+                        "title": "Disabled"
+                    }
+                },
+                {
+                    "mailboxFull": {
+                        "title": "Mailbox Full"
+                    }
+                },
+                {
+                    "refused": {
+                        "title": "Refused"
+                    }
+                },
+                {
+                    "unreachable": {
+                        "title": "Unreachable"
+                    }
+                }
+            ],
+            "description": "The reason why the message could/would not be delivered.",
+            "enum": [
+                "unknownUser",
+                "invalidDomain",
+                "disabled",
+                "mailboxFull",
+                "refused",
+                "unreachable"
+            ]
+        },
+        "reasonMessage": {
+            "title": "Reason Message",
+            "type": "string",
+            "description": "Reason of message delivery failure when the status is `bounce` or `nonDeliverable`.\n"
+        },
+        "offerPlacements": {
+            "title": "Offers",
+            "type": "array",
+            "description": "Offers displayed in the message.",
+            "items": {
+                "$ref": "../../../../_vendor/adobe/experience/campaign/OfferPlacement.schema.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "delivery"
+    ]
+}

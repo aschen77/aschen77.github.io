@@ -1,0 +1,76 @@
+{
+    "id": "beacon-interaction-details.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Beacon",
+    "type": "object",
+    "description": "Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
+    "meta:xdmType": "object",
+    "properties": {
+        "proximityUUID": {
+            "title": "Proximity UUID",
+            "type": "string",
+            "description": "The UUID configured into a beacon (or multiple beacons if multiple operate in an area) to be transmitted to mobile devices in range to identify an organizations beacons.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:proximityUUID",
+            "tagNumber": 1
+        },
+        "beaconMajor": {
+            "title": "Beacon Major",
+            "type": "number",
+            "description": "The first sub organization identifier of an area multiple beacon operate in.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:beaconMajor",
+            "tagNumber": 2
+        },
+        "beaconMinor": {
+            "title": "Beacon Minor",
+            "type": "number",
+            "description": "The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:beaconMinor",
+            "tagNumber": 3
+        },
+        "proximity": {
+            "title": "Proximity to beacon",
+            "type": "string",
+            "description": "Estimated distance from the beacon.",
+            "enum": [
+                "immediate",
+                "near",
+                "far",
+                "unknown"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:proximity",
+            "tagNumber": 4,
+            "enumValues": [
+                {
+                    "immediate": {
+                        "title": "Within a few centimeters",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "near": {
+                        "title": "Within a couple of meters",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "far": {
+                        "title": "Greater than 10 meters away",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "unknown": {
+                        "title": "Not able to ascertain distance, signal likely very weak.",
+                        "tagNumber": 3
+                    }
+                }
+            ]
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/beacon-interaction-details",
+    "meta:altId": "_xdm.context.beacon-interaction-details"
+}

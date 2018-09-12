@@ -1,0 +1,106 @@
+{
+    "id": "poi-detail.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Point of Interest Details",
+    "type": "object",
+    "description": "A Point or Place of Interest(POI) Details. Used to capture the techncial and metadata information for a POI.",
+    "meta:xdmType": "object",
+    "properties": {
+        "POIID": {
+            "title": "POI Identity",
+            "type": "string",
+            "description": "The unique identifier of the POI.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:POIID",
+            "tagNumber": 1
+        },
+        "name": {
+            "title": "POI Name",
+            "type": "string",
+            "description": "The name given to the POI.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 2
+        },
+        "category": {
+            "title": "POI Category",
+            "type": "string",
+            "description": "General category assigned for organizing the POIs by the administrator of POI definitions.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:category",
+            "tagNumber": 3
+        },
+        "type": {
+            "title": "POI Type",
+            "type": "string",
+            "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type",
+            "tagNumber": 4
+        },
+        "distanceToPOICenter": {
+            "title": "Distance to POI Center",
+            "type": "number",
+            "description": "Estimated distance from the POI Center in meters.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:distanceToPOICenter",
+            "tagNumber": 5
+        },
+        "locatingType": {
+            "title": "Locating Type",
+            "type": "string",
+            "description": "Mechanism used to ascertain location.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:locatingType",
+            "tagNumber": 6,
+            "enumValues": [
+                {
+                    "beacon": {
+                        "title": "Hardware beacon",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "gps": {
+                        "title": "Device GPS",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "ip": {
+                        "title": "IP to geo lookup",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "ip+wifi": {
+                        "title": "IP with Wifi lookup",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "wifiTriangulation": {
+                        "title": "Wifi triangulation",
+                        "tagNumber": 4
+                    }
+                }
+            ]
+        },
+        "beaconInteractionDetails": {
+            "title": "Beacon Interaction Details",
+            "$ref": "../context/beacon-interaction-details.schema.json",
+            "description": "Beacon details active for the POI interaction.",
+            "meta:xdmField": "xdm:beaconInteractionDetails",
+            "tagNumber": 7
+        },
+        "geoInteractionDetails": {
+            "title": "Geo Interaction Details",
+            "$ref": "../context/geo-interaction-details.schema.json",
+            "description": "Geo details active for the POI interaction.",
+            "meta:xdmField": "xdm:geoInteractionDetails",
+            "tagNumber": 8
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/poi-detail",
+    "meta:altId": "_xdm.context.poi-detail"
+}

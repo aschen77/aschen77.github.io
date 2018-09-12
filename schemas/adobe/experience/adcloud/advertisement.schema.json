@@ -1,0 +1,166 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "advertisement.schema.json",
+    "title": "Advertisement Details",
+    "type": "object",
+    "description": "Adobe AdCloud Ad Details",
+    "meta:xdmType": "object",
+    "properties": {
+        "adId": {
+            "title": "Ad ID",
+            "type": "string",
+            "description": "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adId",
+            "tagNumber": 1
+        },
+        "runtime": {
+            "title": "Runtime Type",
+            "type": "string",
+            "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:runtime",
+            "tagNumber": 2,
+            "enumValues": [
+                {
+                    "unknown": {
+                        "title": "Unknown",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "HTML5": {
+                        "title": "HTML5",
+                        "tagNumber": 1
+                    }
+                }
+            ]
+        },
+        "adClass": {
+            "title": "Ad Class",
+            "type": "string",
+            "description": "Ad class of driving event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adClass",
+            "tagNumber": 3,
+            "enumValues": [
+                {
+                    "display": {
+                        "title": "Display",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "video": {
+                        "title": "Video",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "social": {
+                        "title": "Social",
+                        "tagNumber": 2
+                    }
+                }
+            ]
+        },
+        "adUnitType": {
+            "title": "Ad Unit Type",
+            "type": "string",
+            "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adUnitType",
+            "tagNumber": 4,
+            "enumValues": [
+                {
+                    "linearVideo": {
+                        "title": "Linear video",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "interactiveVideo": {
+                        "title": "Interactive video",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "banner": {
+                        "title": "Banner",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "richMediaBanner": {
+                        "title": "Rich media banner",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "newsFeedVideo": {
+                        "title": "News feed video",
+                        "tagNumber": 4
+                    }
+                },
+                {
+                    "newsFeedDisplay": {
+                        "title": "News feed display",
+                        "tagNumber": 5
+                    }
+                },
+                {
+                    "HTML5": {
+                        "title": "HTML5",
+                        "tagNumber": 6
+                    }
+                },
+                {
+                    "inPageVideo": {
+                        "title": "In page video",
+                        "tagNumber": 7
+                    }
+                },
+                {
+                    "inPageDisplay": {
+                        "title": "In page display",
+                        "tagNumber": 8
+                    }
+                },
+                {
+                    "facebook": {
+                        "title": "Facebook",
+                        "tagNumber": 9
+                    }
+                },
+                {
+                    "twitter": {
+                        "title": "Twitter",
+                        "tagNumber": 10
+                    }
+                },
+                {
+                    "linearTv": {
+                        "title": "Linear TV",
+                        "tagNumber": 11
+                    }
+                },
+                {
+                    "vod": {
+                        "title": "Video on Demand",
+                        "tagNumber": 12
+                    }
+                }
+            ]
+        },
+        "promotedAssetId": {
+            "title": "Promoted Asset ID",
+            "type": "string",
+            "description": "Unique identifier for the underlying asset being promoted in the ad which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:promotedAssetId",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/advertisement",
+    "meta:altId": "_experience.adcloud.advertisement"
+}

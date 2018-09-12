@@ -1,0 +1,14 @@
+{
+    "id": "EndUserIds.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Vendor EndUserIds",
+    "type": "object",
+    "description": "Vendor specific extensions to EndUserIds",
+    "properties": {
+        "adobe": {
+            "title": "Adobe EndUserIds Extension",
+            "$ref": "../_vendor/adobe/EndUserIds.schema.json",
+            "description": "Adobe specific extensions to EndUserIds."
+        }
+    }
+}

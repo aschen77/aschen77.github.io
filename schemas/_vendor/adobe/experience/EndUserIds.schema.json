@@ -1,0 +1,18 @@
+{
+    "id": "EndUserIds.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Experience Cloud EndUserIds Extension",
+    "type": "object",
+    "description": "Adobe Experience Cloud extensions to EndUserIds",
+    "properties": {
+        "mcId": {
+            "title": "Adobe Marketing Cloud Id",
+            "$ref": "../../../core/Identity.schema.json"
+        },
+        "analytics": {
+            "title": "Adobe Analytics Cloud ExperienceEvent Extension",
+            "$ref": "../../../_vendor/adobe/experience/analytics/EndUserIds.schema.json",
+            "description": "Adobe Analytics Cloud extension to EndUserIds."
+        }
+    }
+}

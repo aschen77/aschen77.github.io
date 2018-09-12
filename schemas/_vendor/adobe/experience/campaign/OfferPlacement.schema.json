@@ -1,0 +1,80 @@
+{
+    "id": "OfferPlacement.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Offer Placement",
+    "type": "object",
+    "description": "The Offer Placement represents the instance of an offer displayed in a message.\n",
+    "properties": {
+        "offer": {
+            "title": "Offer",
+            "type": "object",
+            "description": "An offer defined in the Offer Service.",
+            "properties": {
+                "id": {
+                    "title": "Offer ID",
+                    "type": "integer",
+                    "description": "Unique identifier of the offer.",
+                    "minimum": 0,
+                    "maximum": 2147483647
+                },
+                "name": {
+                    "title": "Offer Name",
+                    "type": "string",
+                    "description": "Name of the offer."
+                }
+            },
+            "required": [
+                "id"
+            ]
+        },
+        "activity": {
+            "title": "Activity",
+            "type": "object",
+            "description": "A group of offers.\nMultiple Offers can be clubbed into same Offer activity. Like “Christmas Offer” is an activity which can have\ntwo offers “BOGO”, “Discount20”.\nDepending upon the profile, the Offer Service can pick different offers from the same activity.\n",
+            "properties": {
+                "id": {
+                    "title": "Activity ID",
+                    "type": "integer",
+                    "description": "Unique identifier of the offer activity in the Offer Service.",
+                    "minimum": 0,
+                    "maximum": 2147483647
+                },
+                "activityName": {
+                    "title": "Activity Name",
+                    "type": "string",
+                    "description": "Name of the offer activity in the Offer Service."
+                }
+            },
+            "required": [
+                "id"
+            ]
+        },
+        "placement": {
+            "title": "Placement",
+            "type": "object",
+            "description": "A location in the message where the offer will be displayed.",
+            "properties": {
+                "id": {
+                    "title": "Placement ID",
+                    "type": "integer",
+                    "description": "Unique identifier of the placement.",
+                    "minimum": 0,
+                    "maximum": 2147483647
+                },
+                "name": {
+                    "title": "Placement Name",
+                    "type": "string",
+                    "description": "Name of the placement."
+                }
+            },
+            "required": [
+                "id"
+            ]
+        }
+    },
+    "required": [
+        "offer",
+        "activity",
+        "placement"
+    ]
+}

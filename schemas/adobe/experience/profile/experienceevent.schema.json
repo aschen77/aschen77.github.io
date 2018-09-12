@@ -1,0 +1,37 @@
+{
+    "id": "experienceevent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent",
+    "type": "object",
+    "meta:extends": [
+        "context/experienceevent"
+    ],
+    "description": "Adobe Experience Cloud - Profile Service extensions to Experience Event.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "profile": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "originDatasetID": {
+                            "title": "Origin Dataset ID",
+                            "type": "string",
+                            "description": "Identity of the Dataset that the Profile Service ingested the data from. Usage is reserved for the Profile Service.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/profile/originDatasetID",
+                            "tagNumber": 1
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/profile/experienceevent",
+    "meta:altId": "_experience.profile.experienceevent"
+}

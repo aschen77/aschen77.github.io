@@ -1,0 +1,33 @@
+{
+    "id": "webinfo.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web Information",
+    "type": "object",
+    "description": "",
+    "meta:xdmType": "object",
+    "properties": {
+        "webPageDetails": {
+            "title": "Web Page Details",
+            "$ref": "../context/webpagedetails.schema.json",
+            "description": "Details about the web page where the web interaction occurred.",
+            "meta:xdmField": "xdm:webPageDetails",
+            "tagNumber": 1
+        },
+        "webInteraction": {
+            "title": "Web Interaction",
+            "$ref": "../context/webinteraction.schema.json",
+            "description": "Details about the web link (URL) that corresponds to where the interaction occurred.",
+            "meta:xdmField": "xdm:webInteraction",
+            "tagNumber": 2
+        },
+        "webReferrer": {
+            "title": "Web Referrer",
+            "$ref": "../context/webreferrer.schema.json",
+            "description": "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded.",
+            "meta:xdmField": "xdm:webReferrer",
+            "tagNumber": 3
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/webinfo",
+    "meta:altId": "_xdm.context.webinfo"
+}

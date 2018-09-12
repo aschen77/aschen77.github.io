@@ -1,0 +1,36 @@
+{
+    "id": "Session.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Generated Session Details",
+    "type": "object",
+    "description": "Adobe Analytics Cloud generated session details.",
+    "properties": {
+        "num": {
+            "title": "Session Number",
+            "type": "integer",
+            "description": "Current session number for the end-user."
+        },
+        "depth": {
+            "title": "Session Depth",
+            "type": "integer",
+            "description": "Current session depth (eg page number) for the end-user."
+        },
+        "timestamp": {
+            "title": "Session Entry Timestamp",
+            "type": "integer",
+            "description": "The timestamp at the entry into this session. Milliseconds since midnight of January 1, 1970.",
+            "minimum": 1,
+            "maximum": 9223372036854770000
+        },
+        "search": {
+            "title": "Session Entry Search",
+            "$ref": "../../../../core/Search.schema.json",
+            "description": "The information related to web or mobile search at the entry of this session."
+        },
+        "web": {
+            "title": "Session Entry Web",
+            "$ref": "../../../../core/Web.schema.json",
+            "description": "The information related to web page, link, and referrer at the entry of this session."
+        }
+    }
+}

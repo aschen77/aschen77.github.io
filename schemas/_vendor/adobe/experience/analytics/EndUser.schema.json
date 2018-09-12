@@ -1,0 +1,21 @@
+{
+    "id": "EndUser.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Generated End User Snapshot",
+    "type": "object",
+    "description": "Adobe Analytics Cloud generated end-user details at the point of this ExperienceEvent.",
+    "properties": {
+        "firstTimestamp": {
+            "title": "End User First Timestamp",
+            "type": "integer",
+            "description": "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
+            "minimum": 1,
+            "maximum": 9223372036854770000
+        },
+        "firstWeb": {
+            "title": "End User First Web Details",
+            "$ref": "../../../../core/Web.schema.json",
+            "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
+        }
+    }
+}

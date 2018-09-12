@@ -1,0 +1,99 @@
+{
+    "id": "Delivery.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Delivery",
+    "type": "object",
+    "description": "An action targeting one or more persons in a campaign.\n",
+    "properties": {
+        "id": {
+            "title": "Activity Identifer",
+            "type": "string"
+        },
+        "title": {
+            "title": "Title",
+            "type": "string",
+            "description": "Human readable name of the activity.",
+            "maxLength": 128
+        },
+        "communicationChannel": {
+            "title": "Channel",
+            "$ref": "../../../../core/CommunicationChannel.schema.json",
+            "description": "The marketing channel used to execute this activity.\n"
+        },
+        "description": {
+            "title": "Description",
+            "type": "string",
+            "description": "Description of the activity intent."
+        },
+        "trackingCode": {
+            "title": "Tracking Code",
+            "type": "string",
+            "description": "A human readable tracking code for this activity. A same tracking code\ncan be reused over multiple activities.\n\nFor instance this could be a promotion code. That same code could be used\nover different channels at different point of time. All activities sharing\nthat same promotion code can then be grouped together within a same report\neven if they are not under the same campaign.\n"
+        },
+        "startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "The intended start date of the activity.\n\nIn Adobe Campaign, the start date is when the delivery of the messages is\nscheduled to start.\n"
+        },
+        "endDate": {
+            "title": "End Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "The intended end date of the activity.\n\nIn Adobe Campaign, the end date is the expiration date of the delivery.\nAfter this date, no messages are expected to be delivered.\n\nUnlike the `startDate`, the `endDate` is not required. Some activities\ncan be *open* and so the `endDate` is not known at the time of the creation\nof the entity (e.g., a real-time messaging activity in Adobe Campaign).\n"
+        },
+        "messagesClass": {
+            "title": "Message Class",
+            "type": "string",
+            "enumValues": [
+                {
+                    "bulk": {
+                        "title": "Bulk"
+                    }
+                },
+                {
+                    "automation": {
+                        "title": "Automation"
+                    }
+                },
+                {
+                    "transactional": {
+                        "title": "Transactional"
+                    }
+                }
+            ],
+            "description": "Marketing classification of the messages sent through that delivery.\n",
+            "default": "bulk",
+            "enum": [
+                "bulk",
+                "automation",
+                "transactional"
+            ]
+        },
+        "campaign": {
+            "title": "Campaign",
+            "$ref": "../../../../_vendor/adobe/experience/campaign/Campaign.schema.json",
+            "description": "Campaign owning the delivery activity.\n"
+        },
+        "template": {
+            "title": "Template",
+            "$ref": "../../../../core/Reference.schema.json",
+            "description": "The delivery template used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `bulk`: the template is standard delivery template.\n* `messageClass` = `automation`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+        },
+        "testEnabled": {
+            "title": "Test Enabled",
+            "type": "boolean",
+            "description": "Specify whether delivery is of type AB testing.\n",
+            "default": false
+        }
+    },
+    "required": [
+        "id",
+        "title",
+        "communicationChannel",
+        "startDate",
+        "messagesClass",
+        "template",
+        "testEnabled"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "id": "Link.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Link",
+    "type": "object",
+    "description": "Link in a message.",
+    "properties": {
+        "id": {
+            "title": "Unique Identifier",
+            "type": "string"
+        },
+        "description": {
+            "title": "Description",
+            "type": "string",
+            "description": "A human-friendly description of the URL."
+        },
+        "url": {
+            "title": "URL",
+            "type": "string"
+        },
+        "occurrence": {
+            "title": "Occurrence",
+            "type": "integer",
+            "description": "URL occurrence index in the content (first is 1).\nWhen the same URL is available several times in the same content, its is\nnecessary to track which occurrence of the URL has been clicked on.\n",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 32767
+        },
+        "tags": {
+            "title": "Tags",
+            "type": "array",
+            "description": "A list of tags qualifying the link.\nThe URL category is one of those tags.\n",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "url",
+        "occurrence"
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "id": "browserdetails.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Browser Details",
+    "type": "object",
+    "description": "Detail information related to the browser",
+    "meta:xdmType": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "description": "The application or browser name.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 1
+        },
+        "vendor": {
+            "title": "Vendor",
+            "type": "string",
+            "description": "The application or browser vendor.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:vendor",
+            "tagNumber": 2
+        },
+        "version": {
+            "title": "Version",
+            "type": "string",
+            "description": "The application or browser version.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version",
+            "tagNumber": 3
+        },
+        "userAgent": {
+            "title": "User Agent",
+            "type": "string",
+            "description": "The HTTP User-Agent string from the client request.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:userAgent",
+            "tagNumber": 4
+        },
+        "acceptLanguage": {
+            "title": "Accept Language",
+            "type": "string",
+            "description": "An IETF Language Tag (RFC 5646).",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:acceptLanguage",
+            "tagNumber": 5
+        },
+        "cookiesEnabled": {
+            "title": "Allows Cookies",
+            "type": "boolean",
+            "description": "The current user agent settings allow for the writing of cookies.'",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:cookiesEnabled",
+            "tagNumber": 6
+        },
+        "javaScriptEnabled": {
+            "title": "JavaScript Enabled",
+            "type": "boolean",
+            "description": "If JavaScript was enabled in the device this observation was made from.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:javaScriptEnabled",
+            "tagNumber": 7
+        },
+        "javaScriptVersion": {
+            "title": "JavaScript Version",
+            "type": "string",
+            "description": "The version of JavaScript supported during the observation.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:javaScriptVersion",
+            "tagNumber": 8
+        },
+        "javaEnabled": {
+            "title": "Java Enabled",
+            "type": "boolean",
+            "description": "If Java was enabled in the device this observation was made from.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:javaEnabled",
+            "tagNumber": 9
+        },
+        "javaVersion": {
+            "title": "Java Version",
+            "type": "string",
+            "description": "The version of Java supported during the observation.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:javaVersion",
+            "tagNumber": 10
+        },
+        "quicktimeVersion": {
+            "title": "Quicktime Version",
+            "type": "string",
+            "description": "The version of Apple Quicktime supported during the observation.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:quicktimeVersion",
+            "tagNumber": 11
+        },
+        "thirdPartyCookiesEnabled": {
+            "title": "Allows Third-party Cookies",
+            "type": "boolean",
+            "description": "If third-party cookies were enabled when this observation was made.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:thirdPartyCookiesEnabled",
+            "tagNumber": 12
+        },
+        "viewportHeight": {
+            "title": "Viewport Height",
+            "type": "integer",
+            "description": "The vertical size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport height.",
+            "minimum": 0,
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:viewportHeight",
+            "tagNumber": 13
+        },
+        "viewportWidth": {
+            "title": "Viewport Width",
+            "type": "integer",
+            "description": "The horizontal size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport width.",
+            "minimum": 0,
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:viewportWidth",
+            "tagNumber": 14
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/browserdetails",
+    "meta:altId": "_xdm.context.browserdetails"
+}

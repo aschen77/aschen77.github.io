@@ -1,0 +1,58 @@
+{
+    "id": "media-timed-chapter-asset-reference.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Timed Media Chapter Asset Reference",
+    "type": "object",
+    "description": "Asset information about the chapter captured by the experience event.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Chapter Identity",
+            "format": "uri",
+            "type": "string",
+            "description": "The identity of the chapter.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_dc": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "title": {
+                    "title": "Chapter Name",
+                    "type": "string",
+                    "description": "The friendly name of the chapter and/or segment.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "dc:title",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 2
+        },
+        "_xmpDM": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "duration": {
+                    "title": "Chapter Length/Duration",
+                    "type": "integer",
+                    "description": "The length of the chapter, in seconds.",
+                    "meta:xdmType": "int",
+                    "meta:xdmField": "xmpDM:duration",
+                    "tagNumber": 1
+                }
+            },
+            "required": [
+                "duration"
+            ],
+            "tagNumber": 3
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference",
+    "meta:altId": "_xdm.context.media-timed-chapter-asset-reference",
+    "required": [
+        "_id",
+        "_xmpDM"
+    ]
+}

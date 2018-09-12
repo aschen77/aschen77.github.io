@@ -1,0 +1,66 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "model/PhysicalLocation.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Physical Location",
+    "type": "object",
+    "description": "",
+    "properties": {
+        "id": {
+            "title": "Location Id",
+            "type": "string",
+            "description": "The unique identifier of the location."
+        },
+        "description": {
+            "title": "Description",
+            "type": "string",
+            "description": "The description of the physical location."
+        },
+        "address": {
+            "title": "Address",
+            "$ref": "../core/Address.schema.json",
+            "description": "The physical address of the location."
+        },
+        "phoneNumber": {
+            "title": "Phone Number",
+            "type": "string",
+            "description": "The phone number."
+        },
+        "locationCode": {
+            "title": "Location Code",
+            "type": "string",
+            "description": "A short code that uniquely identifies this location."
+        },
+        "shape": {
+            "title": "Geo Shape",
+            "$ref": "../core/GeoShape.schema.json",
+            "description": "The geographic shape of the physical location."
+        },
+        "pointOfInterest": {
+            "title": "Point of Interest",
+            "$ref": "../core/GeoCoordinates.schema.json",
+            "description": "The coordinates of the point of interest for this location."
+        },
+        "containedByLocation": {
+            "title": "Contained by Location",
+            "$ref": "../core/Reference.schema.json",
+            "description": "A relation between this location and another one that contains it."
+        },
+        "containsLocations": {
+            "title": "Contains Locations",
+            "type": "array",
+            "items": {
+                "$ref": "../core/Reference.schema.json"
+            },
+            "description": "An array of one or more physical locations that are contained in this one."
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

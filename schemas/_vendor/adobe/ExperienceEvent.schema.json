@@ -1,0 +1,14 @@
+{
+    "id": "ExperienceEvent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe ExperienceEvent Extension",
+    "type": "object",
+    "description": "Adobe specific extensions to ExperienceEvent",
+    "properties": {
+        "experience": {
+            "title": "Adobe Experience Cloud ExperienceEvent Extension",
+            "$ref": "../../_vendor/adobe/experience/ExperienceEvent.schema.json",
+            "description": "Adobe Experience Cloud extensions to ExperienceEvent."
+        }
+    }
+}

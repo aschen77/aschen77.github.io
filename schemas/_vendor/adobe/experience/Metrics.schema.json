@@ -1,0 +1,14 @@
+{
+    "id": "Metrics.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Experience Cloud Metrics",
+    "type": "object",
+    "description": "Adobe Experience Cloud specific metrics",
+    "properties": {
+        "analytics": {
+            "title": "Adobe Analytics Cloud Metrics",
+            "$ref": "../../../_vendor/adobe/experience/analytics/Metrics.schema.json",
+            "description": "Adobe Analytics Cloud specific metrics."
+        }
+    }
+}

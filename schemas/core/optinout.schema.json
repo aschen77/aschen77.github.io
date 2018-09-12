@@ -1,0 +1,225 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "core/OptInOut.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "OptInOut",
+    "type": "object",
+    "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
+    "properties": {
+        "optingEmail": {
+            "title": "Opting Email",
+            "type": "string",
+            "enumValues": [
+                {
+                    "notProvided": {
+                        "title": "Not Provided"
+                    }
+                },
+                {
+                    "pendingConfirmation": {
+                        "title": "Pending Verification"
+                    }
+                },
+                {
+                    "in": {
+                        "title": "In"
+                    }
+                },
+                {
+                    "out": {
+                        "title": "Out"
+                    }
+                }
+            ],
+            "description": "Preference for email communication.",
+            "default": "notProvided",
+            "enum": [
+                "notProvided",
+                "pendingConfirmation",
+                "in",
+                "out"
+            ]
+        },
+        "optingPhone": {
+            "title": "Opting Phone",
+            "type": "string",
+            "enumValues": [
+                {
+                    "notProvided": {
+                        "title": "Not Provided"
+                    }
+                },
+                {
+                    "pendingConfirmation": {
+                        "title": "Pending Verification"
+                    }
+                },
+                {
+                    "in": {
+                        "title": "In"
+                    }
+                },
+                {
+                    "out": {
+                        "title": "Out"
+                    }
+                }
+            ],
+            "description": "Preference for phone voice communication.",
+            "default": "notProvided",
+            "enum": [
+                "notProvided",
+                "pendingConfirmation",
+                "in",
+                "out"
+            ]
+        },
+        "optingTextMessaging": {
+            "title": "Opting Text Messaging",
+            "type": "string",
+            "enumValues": [
+                {
+                    "notProvided": {
+                        "title": "Not Provided"
+                    }
+                },
+                {
+                    "pendingConfirmation": {
+                        "title": "Pending Verification"
+                    }
+                },
+                {
+                    "in": {
+                        "title": "In"
+                    }
+                },
+                {
+                    "out": {
+                        "title": "Out"
+                    }
+                }
+            ],
+            "description": "Preference for instant text communication.",
+            "default": "notProvided",
+            "enum": [
+                "notProvided",
+                "pendingConfirmation",
+                "in",
+                "out"
+            ]
+        },
+        "optingFax": {
+            "title": "Opting Fax",
+            "type": "string",
+            "enumValues": [
+                {
+                    "notProvided": {
+                        "title": "Not Provided"
+                    }
+                },
+                {
+                    "pendingConfirmation": {
+                        "title": "Pending Verification"
+                    }
+                },
+                {
+                    "in": {
+                        "title": "In"
+                    }
+                },
+                {
+                    "out": {
+                        "title": "Out"
+                    }
+                }
+            ],
+            "description": "Preference for fax communication.",
+            "default": "notProvided",
+            "enum": [
+                "notProvided",
+                "pendingConfirmation",
+                "in",
+                "out"
+            ]
+        },
+        "optingAddress": {
+            "title": "Opting Address",
+            "type": "string",
+            "enumValues": [
+                {
+                    "notProvided": {
+                        "title": "Not Provided"
+                    }
+                },
+                {
+                    "pendingConfirmation": {
+                        "title": "Pending Verification"
+                    }
+                },
+                {
+                    "in": {
+                        "title": "In"
+                    }
+                },
+                {
+                    "out": {
+                        "title": "Out"
+                    }
+                }
+            ],
+            "description": "Preference for mail address communication.",
+            "default": "notProvided",
+            "enum": [
+                "notProvided",
+                "pendingConfirmation",
+                "in",
+                "out"
+            ]
+        },
+        "optingPushNotification": {
+            "title": "Opting Push Notification",
+            "type": "string",
+            "enumValues": [
+                {
+                    "notProvided": {
+                        "title": "Not Provided"
+                    }
+                },
+                {
+                    "pendingConfirmation": {
+                        "title": "Pending Verification"
+                    }
+                },
+                {
+                    "in": {
+                        "title": "In"
+                    }
+                },
+                {
+                    "out": {
+                        "title": "Out"
+                    }
+                }
+            ],
+            "description": "Preference for push notification.",
+            "default": "notProvided",
+            "enum": [
+                "notProvided",
+                "pendingConfirmation",
+                "in",
+                "out"
+            ]
+        },
+        "globalOptout": {
+            "title": "Global Opt-out",
+            "type": "boolean",
+            "description": "Do not contact this profile on any communication channel.",
+            "default": false
+        }
+    }
+}

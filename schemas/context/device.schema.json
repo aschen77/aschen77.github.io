@@ -1,0 +1,149 @@
+{
+    "id": "device.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Device",
+    "type": "object",
+    "description": "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
+    "meta:xdmType": "object",
+    "properties": {
+        "typeID": {
+            "title": "Type Identifier",
+            "type": "string",
+            "description": "An identifier for the device. This may be an identifier from Device Atlas or another service that identifies the hardware that is being used.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:typeID",
+            "tagNumber": 1
+        },
+        "typeIDService": {
+            "title": "Type Identifier Service",
+            "type": "string",
+            "format": "uri",
+            "description": "The namespace of the service that is used to identify the device type.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:typeIDService",
+            "tagNumber": 2,
+            "enumValues": [
+                {
+                    "deviceatlas": {
+                        "title": "Device Atlas",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "adobecampaign": {
+                        "title": "Adobe Campaign",
+                        "tagNumber": 1
+                    }
+                }
+            ]
+        },
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "description": "Type of device being tracked.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type",
+            "tagNumber": 3,
+            "enumValues": [
+                {
+                    "mobile": {
+                        "title": "Mobile",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "tablet": {
+                        "title": "Tablet",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "desktop": {
+                        "title": "Desktop",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "ereader": {
+                        "title": "E-Reader",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "gaming": {
+                        "title": "Gaming Console",
+                        "tagNumber": 4
+                    }
+                },
+                {
+                    "television": {
+                        "title": "Television",
+                        "tagNumber": 5
+                    }
+                },
+                {
+                    "settop": {
+                        "title": "Set-top Box",
+                        "tagNumber": 6
+                    }
+                },
+                {
+                    "mediaplayer": {
+                        "title": "Media Player",
+                        "tagNumber": 7
+                    }
+                }
+            ]
+        },
+        "manufacturer": {
+            "title": "Manufacturer",
+            "type": "string",
+            "description": "The name of the organization who owns the design and creation of the Device. For example, 'Apple' is the manufacturer of the iPhone.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:manufacturer",
+            "tagNumber": 4
+        },
+        "model": {
+            "title": "Model",
+            "type": "string",
+            "description": "The name of the model for the Device. This is the common, human-readable or marketing name for the Device. The 'iPhone 6S' is a particular model of mobile phone.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:model",
+            "tagNumber": 5
+        },
+        "modelNumber": {
+            "title": "Model Number",
+            "type": "string",
+            "description": "The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modelNumber",
+            "tagNumber": 6
+        },
+        "screenHeight": {
+            "title": "Screen Height",
+            "type": "integer",
+            "description": "The number of veritcal pixels of the device's active display in its default orientation.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:screenHeight",
+            "tagNumber": 7
+        },
+        "screenWidth": {
+            "title": "Screen Width",
+            "type": "integer",
+            "description": "The number of horizontal pixels of the device's active display in its default orientation.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:screenWidth",
+            "tagNumber": 8
+        },
+        "colorDepth": {
+            "title": "Color Depth",
+            "type": "integer",
+            "description": "The number of colors the display is able to represent.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:colorDepth",
+            "tagNumber": 9
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/device",
+    "meta:altId": "_xdm.context.device"
+}

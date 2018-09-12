@@ -1,0 +1,88 @@
+{
+    "id": "webreferrer.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web Referrer",
+    "type": "object",
+    "description": "",
+    "meta:xdmType": "object",
+    "properties": {
+        "URL": {
+            "title": "URL",
+            "type": "string",
+            "description": "The referrer URL.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:URL",
+            "tagNumber": 1
+        },
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "description": "The referrer type.",
+            "enum": [
+                "internal",
+                "external",
+                "search_engine",
+                "typed_bookmarked",
+                "email",
+                "social",
+                "unknown",
+                "usenet"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type",
+            "tagNumber": 2,
+            "enumValues": [
+                {
+                    "internal": {
+                        "title": "Referral originated from the current domain or site.",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "external": {
+                        "title": "Referral originated from a different domain or site that was not a search or social type.",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "search_engine": {
+                        "title": "Search engine referrers are identified when visitors use a search engine to access the site.",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "typed_bookmarked": {
+                        "title": "Typed/bookmarked referrers are identified when visitors type your site’s URL directly into their browser, or if they access the site by selecting bookmarks.",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "email": {
+                        "title": "A referring domain is considered as an email referring domain type when visitors click an emailed message link containing the protocol imap:// or mail:// and arrive at the site.",
+                        "tagNumber": 4
+                    }
+                },
+                {
+                    "social": {
+                        "title": "The referrer is identified as a social network.",
+                        "tagNumber": 5
+                    }
+                },
+                {
+                    "unknown": {
+                        "title": "The referrer is unidentifiable (unknown). `No JavaScript` could be the cause.",
+                        "tagNumber": 6
+                    }
+                },
+                {
+                    "news": {
+                        "title": "The URL of a referrer started with news://. As such, the referrer link was posted on a Usenet newsgroup rather than a web page.",
+                        "tagNumber": 7
+                    }
+                }
+            ]
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/webreferrer",
+    "meta:altId": "_xdm.context.webreferrer"
+}

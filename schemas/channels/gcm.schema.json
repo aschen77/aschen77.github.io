@@ -1,0 +1,152 @@
+{
+    "id": "gcm.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "GCM",
+    "description": "Google Cloud Messaging",
+    "meta:extends": [
+        "channels/channel#/definitions/channel"
+    ],
+    "type": "object",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
+            "meta:xdmType": "string",
+            "const": "https://ns.adobe.com/xdm/channels/gcm",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "mode": {
+            "type": "string",
+            "enum": [
+                "push",
+                "pull",
+                "bidirectional"
+            ],
+            "description": "How experiences are delivered in this channel.",
+            "meta:xdmType": "string",
+            "const": "push",
+            "meta:xdmField": "xdm:mode",
+            "tagNumber": 2,
+            "enumValues": [
+                {
+                    "push": {
+                        "title": "The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in.",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "pull": {
+                        "title": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "bidirectional": {
+                        "title": "Both `push` and `pull` interaction modes are supported by the channel.",
+                        "tagNumber": 2
+                    }
+                }
+            ]
+        },
+        "_type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The `@type` property is used to provide a rough classification of channels with similar properties.",
+            "meta:xdmType": "string",
+            "const": "https://ns.adobe.com/xdm/channel-types/mobile",
+            "meta:xdmField": "@type",
+            "tagNumber": 3,
+            "enumValues": [
+                {
+                    "web": {
+                        "title": "The world wide web, including mobile web",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "social": {
+                        "title": "Social media platforms",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "mobile": {
+                        "title": "Mobile applications",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "messaging": {
+                        "title": "Instant Messaging",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "email": {
+                        "title": "E-Mail",
+                        "tagNumber": 4
+                    }
+                },
+                {
+                    "offline": {
+                        "title": "Non-Digital experience channels",
+                        "tagNumber": 5
+                    }
+                }
+            ]
+        },
+        "contentTypes": {
+            "type": "array",
+            "description": "The content types that this channel can deliver.",
+            "meta:xdmType": "array",
+            "const": [],
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The `@type` of an XDM-defined content type that is supported by this channel.",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:contentTypes",
+            "tagNumber": 4
+        },
+        "metricTypes": {
+            "type": "array",
+            "description": "The metrics that can be collected in this channel.",
+            "meta:xdmType": "array",
+            "const": [],
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The `@type` of an XDM-defined metric that is supported by this channel.",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:metricTypes",
+            "tagNumber": 5
+        },
+        "locationTypes": {
+            "type": "array",
+            "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
+            "meta:xdmType": "array",
+            "const": [],
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The `@type` of an XDM-defined location (virtual place) that this channel can contain.",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:locationTypes",
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/channels/gcm",
+    "meta:altId": "_xdm.channels.gcm",
+    "required": [
+        "_id"
+    ]
+}

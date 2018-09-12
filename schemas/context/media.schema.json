@@ -1,0 +1,19 @@
+{
+    "id": "media.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Media Information",
+    "type": "object",
+    "description": "Media context information for content related interactions.",
+    "meta:xdmType": "object",
+    "properties": {
+        "mediaTimed": {
+            "title": "Timed Media Information",
+            "$ref": "../context/media-timed.schema.json",
+            "description": "Timed media - main content, ads & chapters",
+            "meta:xdmField": "xdm:mediaTimed",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media",
+    "meta:altId": "_xdm.context.media"
+}

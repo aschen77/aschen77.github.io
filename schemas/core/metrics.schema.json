@@ -1,0 +1,40 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "core/Metrics.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Metrics",
+    "type": "object",
+    "description": "Quantifiable measures used to track and assess the status of a specific business process.",
+    "properties": {
+        "directMarketing": {
+            "title": "Direct Marketing",
+            "$ref": "../core/DirectMarketingMetrics.schema.json",
+            "description": "Direct marketing metrics\n"
+        },
+        "commerce": {
+            "title": "Commerce",
+            "$ref": "../core/CommerceMetrics.schema.json",
+            "description": "Commerce metrics\n"
+        },
+        "advertising": {
+            "title": "Advertising",
+            "$ref": "../core/AdvertisingMetrics.schema.json",
+            "description": "Advertising metrics\n"
+        },
+        "web": {
+            "title": "Web",
+            "$ref": "../core/WebMetrics.schema.json",
+            "description": "Web metrics\n"
+        },
+        "_vendor": {
+            "title": "Vendor",
+            "$ref": "../_vendor/Metrics.schema.json",
+            "description": "Vendor specific metrics"
+        }
+    }
+}

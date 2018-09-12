@@ -1,0 +1,83 @@
+{
+    "id": "address.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Address Extensions for Adobe Campaign",
+    "type": "object",
+    "meta:extends": [
+        "common/address"
+    ],
+    "description": "Address extension properties specific to Adobe Campaign.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "addressErrorCount": {
+                            "title": "Address Error Count",
+                            "type": "integer",
+                            "description": "Number of consecutive errors when sending to this address.",
+                            "meta:xdmType": "int",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/addressErrorCount",
+                            "tagNumber": 1
+                        },
+                        "addressQuality": {
+                            "title": "Address Quality",
+                            "type": "string",
+                            "description": "Address quality rating.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/addressQuality",
+                            "tagNumber": 2,
+                            "enumValues": [
+                                {
+                                    "incomplete_address": {
+                                        "title": "Incomplete address",
+                                        "tagNumber": 0
+                                    }
+                                },
+                                {
+                                    "unknown_town_postal_code": {
+                                        "title": "Unknown Town-Postal Code",
+                                        "tagNumber": 1
+                                    }
+                                },
+                                {
+                                    "empty_street": {
+                                        "title": "Empty street",
+                                        "tagNumber": 2
+                                    }
+                                },
+                                {
+                                    "unknown_street": {
+                                        "title": "Unknown street",
+                                        "tagNumber": 3
+                                    }
+                                },
+                                {
+                                    "partially_recognized_street": {
+                                        "title": "Partially-recognized street",
+                                        "tagNumber": 4
+                                    }
+                                },
+                                {
+                                    "fully_recognized_street": {
+                                        "title": "Fully-recognized street",
+                                        "tagNumber": 5
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/address",
+    "meta:altId": "_experience.campaign.address"
+}

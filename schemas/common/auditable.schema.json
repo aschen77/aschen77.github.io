@@ -1,0 +1,78 @@
+{
+    "id": "auditable.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Audit Trail",
+    "type": "object",
+    "meta:extends": [
+        "external/repo/commmon"
+    ],
+    "description": "Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+    "meta:xdmType": "object",
+    "properties": {
+        "repositoryCreatedBy": {
+            "title": "Created by User Identifier",
+            "type": "string",
+            "description": "User id who has created the entity.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy",
+            "tagNumber": 1
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by User Identifier",
+            "type": "string",
+            "description": "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy",
+            "tagNumber": 2
+        },
+        "createdByBatchID": {
+            "title": "Created by Batch Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID",
+            "tagNumber": 3
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by Batch Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID",
+            "tagNumber": 4
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate",
+                    "tagNumber": 1
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:lastModifiedDate",
+                    "tagNumber": 2
+                }
+            },
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/auditable",
+    "meta:altId": "_xdm.common.auditable"
+}

@@ -1,0 +1,102 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "model/ExperienceEvent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent",
+    "type": "object",
+    "description": "The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.",
+    "properties": {
+        "id": {
+            "title": "Identifier",
+            "type": "string",
+            "description": "The unique identifier for the ExperienceEvent."
+        },
+        "dataSource": {
+            "title": "Data Source",
+            "$ref": "../core/DataSource.schema.json",
+            "description": "Globally unique identification of a data source."
+        },
+        "timestamp": {
+            "title": "Timestamp",
+            "type": "number",
+            "format": "int64",
+            "description": "The timestamp when the first event of the touchpoint occurred. Milliseconds since midnight of January 1, 1970.",
+            "minimum": 1,
+            "maximum": 9223372036854770000
+        },
+        "endUserIds": {
+            "title": "End User IDs",
+            "$ref": "../core/EndUserIds.schema.json",
+            "description": "Condensed, normalized encapsulation of all end user identifiers.\n"
+        },
+        "metrics": {
+            "title": "Metrics",
+            "$ref": "../core/Metrics.schema.json",
+            "description": "The metrics for actions performed during this observation."
+        },
+        "environment": {
+            "title": "Environment",
+            "$ref": "../core/Environment.schema.json",
+            "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
+        },
+        "productListItems": {
+            "title": "Product List Items",
+            "type": "array",
+            "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+            "items": {
+                "$ref": "../core/ProductListItem.schema.json"
+            }
+        },
+        "device": {
+            "title": "Device",
+            "$ref": "../core/Device.schema.json",
+            "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
+        },
+        "commerce": {
+            "title": "Commerce",
+            "$ref": "../core/Commerce.schema.json",
+            "description": "The commerce specific data related to this interaction."
+        },
+        "application": {
+            "title": "Application",
+            "$ref": "../core/Application.schema.json",
+            "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
+        },
+        "search": {
+            "title": "Search",
+            "$ref": "../core/Search.schema.json",
+            "description": "The information related to web or mobile search."
+        },
+        "web": {
+            "title": "Web",
+            "$ref": "../core/Web.schema.json",
+            "description": "The information related to web page and link of the ExperienceEvent."
+        },
+        "marketing": {
+            "title": "Marketing",
+            "$ref": "../core/Marketing.schema.json",
+            "description": "The information related to marketing activities that are active with the touchpoint."
+        },
+        "locationContext": {
+            "title": "Location Context",
+            "$ref": "../core/LocationContext.schema.json",
+            "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+        },
+        "_vendor": {
+            "title": "Vendor Extensions",
+            "$ref": "../_vendor/ExperienceEvent.schema.json",
+            "description": "Vendor extensions to ExperienceEvent"
+        }
+    },
+    "required": [
+        "id",
+        "dataSource",
+        "timestamp",
+        "endUserIds"
+    ]
+}

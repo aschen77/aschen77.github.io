@@ -1,0 +1,62 @@
+{
+    "id": "adobe/experienceevent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Target ExperienceEvent Extension",
+    "type": "object",
+    "description": "Adobe Target extension to ExperienceEvent.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "properties": {
+                "target": {
+                    "type": "object",
+                    "properties": {
+                        "clientcode": {
+                            "title": "Adobe Target client code",
+                            "type": "string",
+                            "description": "Adobe Target client code.",
+                            "meta:xdmType": "string"
+                        },
+                        "mboxname": {
+                            "title": "Adobe Target Mbox Name",
+                            "type": "string",
+                            "description": "Adobe Target mbox name.",
+                            "meta:xdmType": "string"
+                        },
+                        "mboxversion": {
+                            "title": "Adobe Target Mbox version",
+                            "type": "string",
+                            "description": "Adobe Target mbox version.",
+                            "meta:xdmType": "string"
+                        },
+                        "sessionid": {
+                            "title": "Adobe Target Session Identifier",
+                            "type": "string",
+                            "description": "Adobe Target session identifier.",
+                            "meta:xdmType": "string"
+                        },
+                        "pagedetail": {
+                            "type": "object",
+                            "properties": {
+                                "pageid": {
+                                    "title": "Target Unique Page identifier",
+                                    "type": "string",
+                                    "format": "uri",
+                                    "description": "Target generated Page identifier for current event.",
+                                    "meta:xdmType": "string"
+                                },
+                                "pagescore": {
+                                    "title": "Page Score",
+                                    "type": "number",
+                                    "description": "Customer assigned score to visited page.",
+                                    "meta:xdmType": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

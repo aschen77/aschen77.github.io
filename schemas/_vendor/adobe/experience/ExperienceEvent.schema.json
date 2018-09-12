@@ -1,0 +1,19 @@
+{
+    "id": "ExperienceEvent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Experience Cloud ExperienceEvent Extension",
+    "type": "object",
+    "description": "Adobe Experience Cloud extensions to ExperienceEvent",
+    "properties": {
+        "campaign": {
+            "title": "Adobe Campaign ExperienceEvent Extension",
+            "$ref": "../../../_vendor/adobe/experience/campaign/ExperienceEvent.schema.json",
+            "description": "Adobe Campaign extensions to ExperienceEvent."
+        },
+        "analytics": {
+            "title": "Adobe Analytics Cloud ExperienceEvent Extension",
+            "$ref": "../../../_vendor/adobe/experience/analytics/ExperienceEvent.schema.json",
+            "description": "Adobe Analytics Cloud extension to ExperienceEvent."
+        }
+    }
+}

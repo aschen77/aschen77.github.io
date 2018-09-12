@@ -1,0 +1,140 @@
+{
+    "id": "media-timed-asset-view-details.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Primary Asset View Details",
+    "type": "object",
+    "description": "View details for the main content playback, present on all ads and chapters that occur during the content's playback.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Media Session ID",
+            "type": "string",
+            "format": "uri",
+            "description": "Identifies an instance of a content stream unique to an individual playback.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "playerName": {
+            "title": "Content Player Name",
+            "type": "string",
+            "description": "Name of the player.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:playerName",
+            "tagNumber": 2
+        },
+        "broadcastChannel": {
+            "title": "Distribution Channel",
+            "type": "string",
+            "description": "Distribution channel from where the content was played.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:broadcastChannel",
+            "tagNumber": 3
+        },
+        "broadcastContentType": {
+            "title": "Broadcast Content Type",
+            "type": "string",
+            "description": "The type of the stream delivery.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:broadcastContentType",
+            "tagNumber": 4,
+            "enumValues": [
+                {
+                    "VOD": {
+                        "title": "Video-on-Demand",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "Live": {
+                        "title": "Live Streaming",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "Linear": {
+                        "title": "Linear playback of the media asset",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "UGC": {
+                        "title": "User-generated Content",
+                        "tagNumber": 3
+                    }
+                },
+                {
+                    "Radio": {
+                        "title": "Radio Show",
+                        "tagNumber": 4
+                    }
+                },
+                {
+                    "Podcast": {
+                        "title": "Audio Postcast",
+                        "tagNumber": 5
+                    }
+                },
+                {
+                    "Audiobook": {
+                        "title": "Audiobook",
+                        "tagNumber": 6
+                    }
+                }
+            ]
+        },
+        "playerSDKVersion": {
+            "title": "Player SDK Version",
+            "$ref": "../context/implementationdetails.schema.json",
+            "description": "The SDK version used by the player.",
+            "meta:xdmField": "xdm:playerSDKVersion",
+            "tagNumber": 5
+        },
+        "broadcastNetwork": {
+            "title": "Broadcast Network",
+            "type": "string",
+            "description": "The programmer network name.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:broadcastNetwork",
+            "tagNumber": 6
+        },
+        "adLoadType": {
+            "title": "Ad Load Type",
+            "type": "string",
+            "description": "The type of ad loaded as defined by each customer's internal representation.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adLoadType",
+            "tagNumber": 7
+        },
+        "sourceFeed": {
+            "title": "Feed Type",
+            "type": "string",
+            "description": "The type of feed. Can either represent actual feed-related data (e.g. EAST HD/SD), or the source of the feed (e.g. an URL).",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:sourceFeed",
+            "tagNumber": 8
+        },
+        "sessionTimeout": {
+            "title": "Media Session Server Timeout",
+            "type": "integer",
+            "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:sessionTimeout",
+            "tagNumber": 9
+        },
+        "qoe": {
+            "title": "Quality of Experience",
+            "$ref": "../context/media-timed-qoe.schema.json",
+            "description": "Timed media properties related to the content playback's quality of experience (QoE).",
+            "meta:xdmField": "xdm:qoe",
+            "tagNumber": 10
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-asset-view-details",
+    "meta:altId": "_xdm.context.media-timed-asset-view-details",
+    "required": [
+        "_id",
+        "playerName",
+        "broadcastChannel"
+    ]
+}

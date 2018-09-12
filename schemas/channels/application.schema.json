@@ -1,0 +1,36 @@
+{
+    "id": "application.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Application",
+    "type": "object",
+    "description": "An application that accepts messages or emit events (Facebook page, Mobile App, ...).\n",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Application Identifier",
+            "type": "string",
+            "description": "Unique identifier of the application.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "description": "Name of the application.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 2
+        },
+        "version": {
+            "title": "Version",
+            "type": "string",
+            "description": "Version of the application.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version",
+            "tagNumber": 3
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/channels/application",
+    "meta:altId": "_xdm.channels.application"
+}

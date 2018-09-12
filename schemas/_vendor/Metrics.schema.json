@@ -1,0 +1,14 @@
+{
+    "id": "Metrics.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Vendor Metrics",
+    "type": "object",
+    "description": "Vendor specific metrics",
+    "properties": {
+        "adobe": {
+            "title": "Adobe Metrics",
+            "$ref": "../_vendor/adobe/Metrics.schema.json",
+            "description": "Adobe specific metrics."
+        }
+    }
+}

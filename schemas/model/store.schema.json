@@ -1,0 +1,114 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "model/Store.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Store",
+    "type": "object",
+    "description": "A place or property (physical or digital) where goods or services are sold, distributed or subscribed. Includes a store with in a larger store.",
+    "properties": {
+        "id": {
+            "title": "Store Id",
+            "type": "string",
+            "description": "The unique identifier of the store."
+        },
+        "name": {
+            "title": "Store Name",
+            "type": "string",
+            "description": "The common name of the store."
+        },
+        "description": {
+            "title": "Description",
+            "type": "string",
+            "description": "The description of the store."
+        },
+        "parentStoreId": {
+            "title": "Parent Store Id",
+            "type": "string",
+            "description": "Id of the store this store is contained or closely related to, e.g a pharmacy inside a supermarket store."
+        },
+        "brand": {
+            "title": "Brand",
+            "type": "string",
+            "description": "Store brand or label."
+        },
+        "location": {
+            "title": "Location",
+            "$ref": "../model/PhysicalLocation.schema.json",
+            "description": "The perminant physical location of the store."
+        },
+        "generalEmail": {
+            "title": "General Email",
+            "$ref": "../core/EmailAddress.schema.json",
+            "description": "The general email address for the store."
+        },
+        "openingHours": {
+            "title": "Opening Hours",
+            "$ref": "../core/OpeningHours.schema.json",
+            "description": "Store opening hours."
+        },
+        "manager": {
+            "title": "Person",
+            "$ref": "../core/Person.schema.json",
+            "description": "Manager of the store."
+        },
+        "dmaId": {
+            "title": "Designated Market Area",
+            "type": "integer",
+            "description": "The Nielsen Media Research designated market area the store serves."
+        },
+        "market": {
+            "title": "Market",
+            "type": "string",
+            "description": "Sales organization  market area the store serves."
+        },
+        "openingDate": {
+            "title": "Original Opening Date",
+            "type": "string",
+            "format": "date",
+            "description": "The date that the store first opened for business, even if the address changed, the area served remained the same."
+        },
+        "remodelDate": {
+            "title": "Last Remodel Date",
+            "type": "string",
+            "format": "date",
+            "description": "The date that the store last had a significant remodel."
+        },
+        "revenueBand": {
+            "title": "Revenue Band",
+            "type": "string",
+            "description": "Revenue classification for this store."
+        },
+        "model": {
+            "title": "Store Model",
+            "type": "string",
+            "description": "The model or type of store. Examples: online, express, micro, kiosk, partner, superstore, mobile, distribution center."
+        },
+        "features": {
+            "title": "Store Features",
+            "type": "array",
+            "description": "List of non-standard features that the store has, such as product demo areas, e.g Apple displays, Bike Shop etc.",
+            "uniqueItems": true,
+            "items": {
+                "type": "string"
+            }
+        },
+        "productCategories": {
+            "title": "Product Categories",
+            "type": "array",
+            "description": "List of product categories this store supports that directly correlate with the categories in the Product schema, e.g cloths, women’s shoes.",
+            "uniqueItems": true,
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name"
+    ]
+}

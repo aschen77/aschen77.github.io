@@ -1,0 +1,24 @@
+{
+    "id": "ExperienceEvent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent Extension",
+    "type": "object",
+    "description": "All ExperienceEvent properties specific to Adobe Campaign.\n",
+    "properties": {
+        "message": {
+            "title": "Message",
+            "$ref": "../../../../_vendor/adobe/experience/campaign/Message.schema.json",
+            "description": "A message sent to a profile or an application.\n"
+        },
+        "link": {
+            "title": "Link",
+            "$ref": "../../../../_vendor/adobe/experience/campaign/Link.schema.json",
+            "description": "The link in the message for a click event.\n"
+        },
+        "offerPlacement": {
+            "title": "Offer Clicked",
+            "$ref": "../../../../_vendor/adobe/experience/campaign/OfferPlacement.schema.json",
+            "description": "The offer and its location in the message for a click event related to an offer.\n"
+        }
+    }
+}

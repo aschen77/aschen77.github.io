@@ -1,0 +1,156 @@
+{
+    "id": "person.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Person",
+    "type": "object",
+    "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
+    "meta:xdmType": "object",
+    "meta:extends": [
+        "external/repo/commmon"
+    ],
+    "properties": {
+        "name": {
+            "title": "Full name",
+            "$ref": "../context/person-name.schema.json",
+            "description": "The person's full name",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 1
+        },
+        "birthDay": {
+            "title": "Birth day",
+            "type": "integer",
+            "description": "The day of the month a person was born (1-31).",
+            "minimum": 1,
+            "maximum": 31,
+            "meta:xdmType": "byte",
+            "meta:xdmField": "xdm:birthDay",
+            "tagNumber": 2
+        },
+        "birthMonth": {
+            "title": "Birth month",
+            "type": "integer",
+            "description": "The month of the year a person was born (1-12).",
+            "minimum": 1,
+            "maximum": 12,
+            "meta:xdmType": "byte",
+            "meta:xdmField": "xdm:birthMonth",
+            "tagNumber": 3
+        },
+        "birthYear": {
+            "title": "Birth year",
+            "type": "integer",
+            "description": "The year a person was born including the century (yyyy, e.g 1983).",
+            "minimum": 1,
+            "maximum": 32767,
+            "meta:xdmType": "short",
+            "meta:xdmField": "xdm:birthYear",
+            "tagNumber": 4
+        },
+        "gender": {
+            "title": "Gender",
+            "type": "string",
+            "enum": [
+                "male",
+                "female",
+                "not_specified",
+                "non_specific"
+            ],
+            "description": "Gender identity of the person.\n",
+            "default": "not_specified",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:gender",
+            "tagNumber": 5,
+            "enumValues": [
+                {
+                    "male": {
+                        "title": "Male",
+                        "tagNumber": 0
+                    }
+                },
+                {
+                    "female": {
+                        "title": "Female",
+                        "tagNumber": 1
+                    }
+                },
+                {
+                    "not_specified": {
+                        "title": "Not Specified",
+                        "tagNumber": 2
+                    }
+                },
+                {
+                    "non_specific": {
+                        "title": "Nonspecific",
+                        "tagNumber": 3
+                    }
+                }
+            ]
+        },
+        "repositoryCreatedBy": {
+            "title": "Created by User Identifier",
+            "type": "string",
+            "description": "User id who has created the entity.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy",
+            "tagNumber": 6
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by User Identifier",
+            "type": "string",
+            "description": "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy",
+            "tagNumber": 7
+        },
+        "createdByBatchID": {
+            "title": "Created by Batch Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID",
+            "tagNumber": 8
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by Batch Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID",
+            "tagNumber": 9
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate",
+                    "tagNumber": 1
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:lastModifiedDate",
+                    "tagNumber": 2
+                }
+            },
+            "tagNumber": 10
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/person",
+    "meta:altId": "_xdm.context.person"
+}

@@ -1,0 +1,40 @@
+{
+    "id": "Campaign.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Campaign",
+    "type": "object",
+    "description": "A marketing campaign.\n",
+    "properties": {
+        "id": {
+            "title": "Campaign Identifier",
+            "type": "string"
+        },
+        "title": {
+            "title": "Title",
+            "type": "string",
+            "description": "Human readable name of the campaign.",
+            "maxLength": 128
+        },
+        "description": {
+            "title": "Description",
+            "type": "string",
+            "description": "Description of the campaign's intent."
+        },
+        "startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "format": "date",
+            "description": "The intended start date of the campaign.\n"
+        },
+        "endDate": {
+            "title": "End Date",
+            "type": "string",
+            "format": "date",
+            "description": "The intended end date of the campaign.\n"
+        }
+    },
+    "required": [
+        "id",
+        "title"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "core/WebLink.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web Link",
+    "type": "object",
+    "description": "Information about the web link of the ExperienceEvent.",
+    "properties": {
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "enumValues": [
+                {
+                    "download": {
+                        "title": "Download"
+                    }
+                },
+                {
+                    "exit": {
+                        "title": "Exit"
+                    }
+                },
+                {
+                    "other": {
+                        "title": "Other"
+                    }
+                }
+            ],
+            "description": "The link type.",
+            "enum": [
+                "download",
+                "exit",
+                "other"
+            ]
+        },
+        "URL": {
+            "title": "URL",
+            "type": "string",
+            "description": "The link URL."
+        },
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "description": "The link name."
+        }
+    }
+}

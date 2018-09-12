@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "campaign.schema.json",
+    "title": "Ad Campaign Detail",
+    "type": "object",
+    "description": "Adobe AdCloud Ad Campaign Hierarchy Details",
+    "meta:xdmType": "object",
+    "properties": {
+        "accountId": {
+            "title": "Account ID",
+            "type": "string",
+            "description": "Unique identifier for the account this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:accountId",
+            "tagNumber": 1
+        },
+        "campaignId": {
+            "title": "Campaign ID",
+            "type": "string",
+            "description": "Unique identifier for the campaign which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:campaignId",
+            "tagNumber": 2
+        },
+        "placementId": {
+            "title": "Placement ID",
+            "type": "string",
+            "description": "Unique identifier for the placement which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:placementId",
+            "tagNumber": 3
+        },
+        "packageId": {
+            "title": "Package ID",
+            "type": "string",
+            "description": "Unique identifier for the package which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:packageId",
+            "tagNumber": 4
+        },
+        "advertiserId": {
+            "title": "Advertiser ID",
+            "type": "string",
+            "description": "Unique identifier for the advertiser which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:advertiserId",
+            "tagNumber": 5
+        },
+        "experimentId": {
+            "title": "Experiment ID",
+            "type": "string",
+            "description": "Unique identifier for the experiment which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:experimentId",
+            "tagNumber": 6
+        },
+        "sampleGroupId": {
+            "title": "Sample Group ID",
+            "type": "string",
+            "description": "Unique identifier for the sample group which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:sampleGroupId",
+            "tagNumber": 7
+        },
+        "currency": {
+            "title": "Account Currency",
+            "type": "string",
+            "examples": [
+                "USD",
+                "EUR"
+            ],
+            "pattern": "^[A-Z]{3}$",
+            "description": "The ISO 4217 billing currency code for the account this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:currency",
+            "tagNumber": 8
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/campaign",
+    "meta:altId": "_experience.adcloud.campaign"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "search.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search",
+    "type": "object",
+    "description": "Information about web search activity.",
+    "meta:xdmType": "object",
+    "properties": {
+        "searchEngine": {
+            "title": "Search Engine",
+            "type": "string",
+            "description": "The search engine used by the search.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:searchEngine",
+            "tagNumber": 1
+        },
+        "searchEngineID": {
+            "title": "Search Engine ID",
+            "type": "string",
+            "format": "uri",
+            "description": "The application-specified identifier used to identify the search engine used by the search.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:searchEngineID",
+            "tagNumber": 2
+        },
+        "keywords": {
+            "title": "Keywords",
+            "type": "string",
+            "description": "The keywords for the search.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:keywords",
+            "tagNumber": 3
+        },
+        "isPaid": {
+            "title": "Is Paid",
+            "type": "boolean",
+            "description": "Indicate if the search is paid or not.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:isPaid",
+            "tagNumber": 4
+        },
+        "pageDepth": {
+            "title": "Page Depth",
+            "type": "integer",
+            "description": "The page depth in the search results.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:pageDepth",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/search",
+    "meta:altId": "_xdm.context.search"
+}

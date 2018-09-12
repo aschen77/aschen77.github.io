@@ -1,0 +1,60 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "core/Geo.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Geo",
+    "type": "object",
+    "description": "The geographic related data where an event was observed.",
+    "properties": {
+        "countryCode": {
+            "title": "Country Code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$",
+            "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
+        },
+        "stateProvince": {
+            "title": "State or Province",
+            "type": "string",
+            "description": "The state, or province portion of the observation."
+        },
+        "city": {
+            "title": "City",
+            "type": "string",
+            "description": "The name of the city."
+        },
+        "postalCode": {
+            "title": "Postal Code",
+            "type": "string",
+            "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
+        },
+        "dmaId": {
+            "title": "Designated Market Area",
+            "type": "integer",
+            "description": "The Nielsen Media Research designated market area."
+        },
+        "msaId": {
+            "title": "Metropolitan Statistical Area",
+            "type": "integer",
+            "description": "The Metropolitan Statistical Area in the USA where the observation occurred."
+        },
+        "latitude": {
+            "title": "Latitude",
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90,
+            "description": "The signed vertical coordinate of a geographic point."
+        },
+        "longitude": {
+            "title": "Longitude",
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180,
+            "description": "The signed horizontal coordinate of a geographic point."
+        }
+    }
+}

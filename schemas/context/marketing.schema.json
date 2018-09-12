@@ -1,0 +1,20 @@
+{
+    "id": "marketing.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Marketing",
+    "type": "object",
+    "description": "The information related to marketing activities that are active with the touchpoint.",
+    "meta:xdmType": "object",
+    "properties": {
+        "trackingCode": {
+            "title": "Tracking Code",
+            "type": "string",
+            "description": "Tracking code that can be used to identify the marketing campaign the event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:trackingCode",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/marketing",
+    "meta:altId": "_xdm.context.marketing"
+}

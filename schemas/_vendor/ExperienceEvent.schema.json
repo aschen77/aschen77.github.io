@@ -1,0 +1,14 @@
+{
+    "id": "ExperienceEvent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Vendor Touchpoint ExperienceEvent",
+    "type": "object",
+    "description": "Vendor specific extensions to ExperienceEvent",
+    "properties": {
+        "adobe": {
+            "title": "Adobe ExperienceEvent Extension",
+            "$ref": "../_vendor/adobe/ExperienceEvent.schema.json",
+            "description": "Adobe specific extensions to ExperienceEvent."
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "id": "placecontext.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Place Context",
+    "type": "object",
+    "description": "",
+    "meta:xdmType": "object",
+    "properties": {
+        "localTime": {
+            "title": "Local Time",
+            "type": "string",
+            "format": "date-time",
+            "description": "The local time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:localTime",
+            "tagNumber": 1
+        },
+        "geo": {
+            "title": "Geo",
+            "$ref": "../common/geo.schema.json",
+            "description": "The geographic location where the experience was delivered.",
+            "meta:xdmField": "xdm:geo",
+            "tagNumber": 2
+        },
+        "POIinteraction": {
+            "title": "POI Interaction",
+            "description": "The Point of Interest(POI) interaction details.",
+            "$ref": "../context/poi-interaction.schema.json",
+            "meta:xdmField": "xdm:POIinteraction",
+            "tagNumber": 3
+        },
+        "activePOIs": {
+            "title": "POI Detail",
+            "description": "Details of the POIs that cause the event.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../context/poi-detail.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:activePOIs",
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/placecontext",
+    "meta:altId": "_xdm.context.placecontext"
+}

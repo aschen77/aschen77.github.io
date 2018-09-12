@@ -1,0 +1,24 @@
+{
+    "id": "ExperienceEvent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Analytics Cloud ExperienceEvent Extension",
+    "type": "object",
+    "description": "Adobe Analytics Cloud extension to ExperienceEvent.",
+    "properties": {
+        "customDimensions": {
+            "title": "Custom Dimensions",
+            "$ref": "../../../../_vendor/adobe/experience/analytics/CustomDimensions.schema.json",
+            "description": "Adobe Analytics Cloud custom dimensions."
+        },
+        "session": {
+            "title": "Generated Session Details",
+            "$ref": "../../../../_vendor/adobe/experience/analytics/Session.schema.json",
+            "description": "Adobe Analytics Cloud generated session details."
+        },
+        "endUser": {
+            "title": "Generated End User Snapshot",
+            "$ref": "../../../../_vendor/adobe/experience/analytics/EndUser.schema.json",
+            "description": "Adobe Analytics Cloud generated end-user details at the point of this ExperienceEvent."
+        }
+    }
+}

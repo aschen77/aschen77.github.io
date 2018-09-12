@@ -1,0 +1,219 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "experienceevent.schema.json",
+    "title": "Adobe AdCloud ExperienceEvent Extension",
+    "type": "object",
+    "meta:extends": [
+        "context/experienceevent"
+    ],
+    "description": "Adobe AdCloud extension to ExperienceEvent.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The unique identifier for the ExperienceEvent.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "dataSource": {
+            "title": "Data Source",
+            "$ref": "../../../data/datasource.schema.json",
+            "description": "Globally unique identification of a data source.",
+            "meta:xdmField": "xdm:dataSource",
+            "tagNumber": 2
+        },
+        "timestamp": {
+            "title": "Timestamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time when the first event of the interaction occurred.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:timestamp",
+            "tagNumber": 3
+        },
+        "receivedTimestamp": {
+            "title": "Received Timestamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time at which this interaction was received by a server.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:receivedTimestamp",
+            "tagNumber": 4
+        },
+        "endUserIDs": {
+            "title": "End User IDs",
+            "$ref": "../../../context/enduserids.schema.json",
+            "description": "Condensed, normalized encapsulation of all end user identifiers.",
+            "meta:xdmField": "xdm:endUserIDs",
+            "tagNumber": 5
+        },
+        "environment": {
+            "title": "Environment",
+            "$ref": "../../../context/environment.schema.json",
+            "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+            "meta:xdmField": "xdm:environment",
+            "tagNumber": 6
+        },
+        "productListItems": {
+            "title": "Product List Items",
+            "type": "array",
+            "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../../content/productlistitem.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:productListItems",
+            "tagNumber": 7
+        },
+        "device": {
+            "title": "Device",
+            "$ref": "../../../context/device.schema.json",
+            "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies.",
+            "meta:xdmField": "xdm:device",
+            "tagNumber": 8
+        },
+        "commerce": {
+            "title": "Commerce",
+            "$ref": "../../../context/commerce.schema.json",
+            "description": "The commerce specific data related to this interaction.",
+            "meta:xdmField": "xdm:commerce",
+            "tagNumber": 9
+        },
+        "application": {
+            "title": "Application",
+            "$ref": "../../../context/application.schema.json",
+            "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+            "meta:xdmField": "xdm:application",
+            "tagNumber": 10
+        },
+        "search": {
+            "title": "Search",
+            "$ref": "../../../context/search.schema.json",
+            "description": "The information related to web or mobile search.",
+            "meta:xdmField": "xdm:search",
+            "tagNumber": 11
+        },
+        "web": {
+            "title": "Web",
+            "$ref": "../../../context/webinfo.schema.json",
+            "description": "The information related to web page and link of the ExperienceEvent.",
+            "meta:xdmField": "xdm:web",
+            "tagNumber": 12
+        },
+        "directMarketing": {
+            "title": "Direct Marketing",
+            "$ref": "../../../context/direct-marketing.schema.json",
+            "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
+            "meta:xdmField": "xdm:directMarketing",
+            "tagNumber": 13
+        },
+        "marketing": {
+            "title": "Marketing",
+            "$ref": "../../../context/marketing.schema.json",
+            "description": "The information related to marketing activities that are active with the touchpoint.",
+            "meta:xdmField": "xdm:marketing",
+            "tagNumber": 14
+        },
+        "placeContext": {
+            "title": "Place Context",
+            "$ref": "../../../context/placecontext.schema.json",
+            "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.",
+            "meta:xdmField": "xdm:placeContext",
+            "tagNumber": 15
+        },
+        "channel": {
+            "title": "Experience Channel",
+            "description": "The experience channel related to this ExperienceEvent.",
+            "$ref": "../../../channels/channel.schema.json",
+            "meta:xdmField": "xdm:channel",
+            "tagNumber": 16
+        },
+        "advertising": {
+            "title": "Advertising",
+            "$ref": "../../../context/advertising.schema.json",
+            "description": "The information related to advertising activity related to the experience event",
+            "meta:xdmField": "xdm:advertising",
+            "tagNumber": 17
+        },
+        "media": {
+            "title": "Media",
+            "$ref": "../../../context/media.schema.json",
+            "description": "The media activity information related to the experience event",
+            "meta:xdmField": "xdm:media",
+            "tagNumber": 18
+        },
+        "profileStitching": {
+            "title": "Profile Stitching",
+            "description": "Details about the ids that were joined by profile stitching.",
+            "$ref": "../../../context/profilestitch.schema.json",
+            "meta:xdmField": "xdm:profileStitching",
+            "tagNumber": 20
+        },
+        "segmentMemberships": {
+            "title": "Segment Memberships",
+            "description": "The segments associated with this experience event",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../../context/segmentmembershipitem.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:segmentMemberships",
+            "tagNumber": 21
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "adcloud": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "eventType": {
+                            "title": "Event Type",
+                            "type": "string",
+                            "description": "Adobe AdCloud event type.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/adcloud/eventType",
+                            "tagNumber": 1
+                        },
+                        "campaign": {
+                            "title": "Ad Campaign Details",
+                            "$ref": "../../../adobe/experience/adcloud/campaign.schema.json",
+                            "description": "Adobe AdCloud ad campaign hierarchy details.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/adcloud/campaign",
+                            "tagNumber": 2
+                        },
+                        "inventory": {
+                            "title": "Ad Inventory Details",
+                            "$ref": "../../../adobe/experience/adcloud/inventory.schema.json",
+                            "description": "Adobe AdCloud inventory details.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/adcloud/inventory",
+                            "tagNumber": 3
+                        },
+                        "advertisement": {
+                            "title": "Ad Asset Details",
+                            "$ref": "../../../adobe/experience/adcloud/advertisement.schema.json",
+                            "description": "Digital advertisement details",
+                            "meta:xdmField": "https://ns.adobe.com/experience/adcloud/advertisement",
+                            "tagNumber": 4
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 19
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/experienceevent",
+    "meta:altId": "_experience.adcloud.experienceevent",
+    "required": [
+        "_id",
+        "timestamp",
+        "endUserIDs"
+    ]
+}

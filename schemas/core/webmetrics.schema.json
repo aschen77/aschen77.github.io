@@ -1,0 +1,25 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "id": "core/WebMetrics.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web Metrics",
+    "type": "object",
+    "description": "Quantifiable measures used to track and assess the status of a web activity.",
+    "properties": {
+        "pageViews": {
+            "title": "Page Views",
+            "$ref": "../core/Metric.schema.json",
+            "description": "Number of views of a web page.\n"
+        },
+        "linkClicks": {
+            "title": "Link Clicks",
+            "$ref": "../core/Metric.schema.json",
+            "description": "Number of clicks of a web link.\n"
+        }
+    }
+}

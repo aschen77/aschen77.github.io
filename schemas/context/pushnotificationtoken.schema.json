@@ -1,0 +1,66 @@
+{
+    "id": "pushnotificationtoken.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Push Notification Token",
+    "type": "object",
+    "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
+    "meta:xdmType": "object",
+    "properties": {
+        "token": {
+            "title": "Token",
+            "type": "string",
+            "description": "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:token",
+            "tagNumber": 1
+        },
+        "registrationDate": {
+            "title": "Registration Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the profile has authorized its application to receive\npush notifications.\n",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:registrationDate",
+            "tagNumber": 2
+        },
+        "deregistrationDate": {
+            "title": "Deregistration Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the profile has disabled push notifications on the application.\n",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:deregistrationDate",
+            "tagNumber": 3
+        },
+        "environment": {
+            "title": "Environment",
+            "$ref": "../context/environment.schema.json",
+            "description": "Environment of at the time of the registration.\n",
+            "meta:xdmField": "xdm:environment",
+            "tagNumber": 4
+        },
+        "device": {
+            "title": "Device",
+            "$ref": "../context/device.schema.json",
+            "description": "The device originating the registration.",
+            "meta:xdmField": "xdm:device",
+            "tagNumber": 5
+        },
+        "application": {
+            "title": "Application",
+            "$ref": "../channels/application.schema.json",
+            "description": "Application registered to receive Push Notifications.\n",
+            "meta:xdmField": "xdm:application",
+            "tagNumber": 6
+        },
+        "channel": {
+            "title": "Communication Channel",
+            "$ref": "../channels/channel.schema.json",
+            "description": "Channels for communicating with customers or users.",
+            "meta:xdmField": "xdm:channel",
+            "tagNumber": 7
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/pushnotificationtoken",
+    "meta:altId": "_xdm.context.pushnotificationtoken"
+}
